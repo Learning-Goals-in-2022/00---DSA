@@ -1,0 +1,894 @@
+<!DOCTYPE html>
+<!-- saved from url=(0095)https://takeuforward.org/interviews/must-do-questions-for-dbms-cn-os-interviews-sde-core-sheet/ -->
+<html lang="en-US" prefix="og: https://ogp.me/ns#" class=""><script type="text/javascript" async="" src="./MUST-DO Questions for [DBMS, CN, OS] Interviews_ SDE Core Sheet - Interviews - Tutorial_files/f.txt"></script><script id="allow-copy_script">(function agent() {
+    let unlock = false
+    document.addEventListener('allow_copy', (event) => {
+      unlock = event.detail.unlock
+    })
+
+    const copyEvents = [
+      'copy',
+      'cut',
+      'contextmenu',
+      'selectstart',
+      'mousedown',
+      'mouseup',
+      'mousemove',
+      'keydown',
+      'keypress',
+      'keyup',
+    ]
+    const rejectOtherHandlers = (e) => {
+      if (unlock) {
+        e.stopPropagation()
+        if (e.stopImmediatePropagation) e.stopImmediatePropagation()
+      }
+    }
+    copyEvents.forEach((evt) => {
+      document.documentElement.addEventListener(evt, rejectOtherHandlers, {
+        capture: true,
+      })
+    })
+  })()</script><head><meta http-equiv="Content-Type" content="text/html; charset=UTF-8">
+
+<meta name="viewport" content="width=device-width, initial-scale=1">
+<link rel="profile" href="https://gmpg.org/xfn/11">
+<link rel="pingback" href="https://takeuforward.org/xmlrpc.php">
+<title>MUST-DO Questions for [DBMS, CN, OS] Interviews: SDE Core Sheet - Interviews - Tutorial</title>
+
+<meta name="description" content="Detailed solution for MUST-DO Questions for [DBMS, CN, OS] Interviews: SDE Core Sheet - (Sheet for the sole purpose of quick revision and preparation in less time) Made with love by takeUforward! What is the SDE Core Sheet? SDE Core Sheet contains very handily crafted and picked interview questions of DBMS, OS, and CN. These questions are very helpful for the last-minute preparation for SDE interviews. 100+ students placed">
+<meta name="robots" content="max-image-preview:large">
+<link rel="canonical" href="https://takeuforward.org/interviews/must-do-questions-for-dbms-cn-os-interviews-sde-core-sheet/">
+<meta property="og:locale" content="en_US">
+<meta property="og:site_name" content="takeUforward - ~ Strive for Excellence">
+<meta property="og:type" content="article">
+<meta property="og:title" content="MUST-DO Questions for [DBMS, CN, OS] Interviews: SDE Core Sheet - Interviews - Tutorial">
+<meta property="og:description" content="Detailed solution for MUST-DO Questions for [DBMS, CN, OS] Interviews: SDE Core Sheet - (Sheet for the sole purpose of quick revision and preparation in less time) Made with love by takeUforward! What is the SDE Core Sheet? SDE Core Sheet contains very handily crafted and picked interview questions of DBMS, OS, and CN. These questions are very helpful for the last-minute preparation for SDE interviews. 100+ students placed">
+<meta property="og:url" content="https://takeuforward.org/interviews/must-do-questions-for-dbms-cn-os-interviews-sde-core-sheet/">
+<meta property="og:image" content="https://takeuforward.org/wp-content/uploads/2021/09/wallpaperYoutube-2.png">
+<meta property="og:image:secure_url" content="https://takeuforward.org/wp-content/uploads/2021/09/wallpaperYoutube-2.png">
+<meta property="og:image:width" content="1024">
+<meta property="og:image:height" content="573">
+<meta property="article:published_time" content="2022-01-11T19:52:56+00:00">
+<meta property="article:modified_time" content="2022-03-01T08:29:23+00:00">
+<meta name="twitter:card" content="summary">
+<meta name="twitter:title" content="MUST-DO Questions for [DBMS, CN, OS] Interviews: SDE Core Sheet - Interviews - Tutorial">
+<meta name="twitter:description" content="Detailed solution for MUST-DO Questions for [DBMS, CN, OS] Interviews: SDE Core Sheet - (Sheet for the sole purpose of quick revision and preparation in less time) Made with love by takeUforward! What is the SDE Core Sheet? SDE Core Sheet contains very handily crafted and picked interview questions of DBMS, OS, and CN. These questions are very helpful for the last-minute preparation for SDE interviews. 100+ students placed">
+<meta name="twitter:image" content="https://takeuforward.org/wp-content/uploads/2021/09/wallpaperYoutube-2.png">
+<script type="application/ld+json" class="aioseo-schema">
+			{"@context":"https:\/\/schema.org","@graph":[{"@type":"WebSite","@id":"https:\/\/takeuforward.org\/#website","url":"https:\/\/takeuforward.org\/","name":"takeUforward","description":"~ Strive for Excellence","inLanguage":"en-US","publisher":{"@id":"https:\/\/takeuforward.org\/#organization"}},{"@type":"Organization","@id":"https:\/\/takeuforward.org\/#organization","name":"takeUforward","url":"https:\/\/takeuforward.org\/","logo":{"@type":"ImageObject","@id":"https:\/\/takeuforward.org\/#organizationLogo","url":"https:\/\/takeuforward.org\/wp-content\/uploads\/2021\/09\/logo_circle_red.gif","width":333,"height":345},"image":{"@id":"https:\/\/takeuforward.org\/#organizationLogo"},"sameAs":["https:\/\/www.youtube.com\/c\/takeUforward","https:\/\/www.linkedin.com\/company\/takeuforward\/"]},{"@type":"BreadcrumbList","@id":"https:\/\/takeuforward.org\/interviews\/must-do-questions-for-dbms-cn-os-interviews-sde-core-sheet\/#breadcrumblist","itemListElement":[{"@type":"ListItem","@id":"https:\/\/takeuforward.org\/#listItem","position":1,"item":{"@type":"WebPage","@id":"https:\/\/takeuforward.org\/","name":"Home","description":"takeuforward is the best place to learn data structures, algorithms, most asked coding interview questions, real interview experiences free of cost.","url":"https:\/\/takeuforward.org\/"},"nextItem":"https:\/\/takeuforward.org\/interviews\/#listItem"},{"@type":"ListItem","@id":"https:\/\/takeuforward.org\/interviews\/#listItem","position":2,"item":{"@type":"WebPage","@id":"https:\/\/takeuforward.org\/interviews\/","name":"Interviews","description":"Detailed solution for MUST-DO Questions for [DBMS, CN, OS] Interviews: SDE Core Sheet - (Sheet for the sole purpose of quick revision and preparation in less time) Made with love by takeUforward! What is the SDE Core Sheet? SDE Core Sheet contains very handily crafted and picked interview questions of DBMS, OS, and CN. These questions are very helpful for the last-minute preparation for SDE interviews. 100+ students placed","url":"https:\/\/takeuforward.org\/interviews\/"},"nextItem":"https:\/\/takeuforward.org\/interviews\/must-do-questions-for-dbms-cn-os-interviews-sde-core-sheet\/#listItem","previousItem":"https:\/\/takeuforward.org\/#listItem"},{"@type":"ListItem","@id":"https:\/\/takeuforward.org\/interviews\/must-do-questions-for-dbms-cn-os-interviews-sde-core-sheet\/#listItem","position":3,"item":{"@type":"WebPage","@id":"https:\/\/takeuforward.org\/interviews\/must-do-questions-for-dbms-cn-os-interviews-sde-core-sheet\/","name":"MUST-DO Questions for [DBMS, CN, OS] Interviews: SDE Core Sheet","description":"Detailed solution for MUST-DO Questions for [DBMS, CN, OS] Interviews: SDE Core Sheet - (Sheet for the sole purpose of quick revision and preparation in less time) Made with love by takeUforward! What is the SDE Core Sheet? SDE Core Sheet contains very handily crafted and picked interview questions of DBMS, OS, and CN. These questions are very helpful for the last-minute preparation for SDE interviews. 100+ students placed","url":"https:\/\/takeuforward.org\/interviews\/must-do-questions-for-dbms-cn-os-interviews-sde-core-sheet\/"},"previousItem":"https:\/\/takeuforward.org\/interviews\/#listItem"}]},{"@type":"Person","@id":"https:\/\/takeuforward.org\/author\/admin\/#author","url":"https:\/\/takeuforward.org\/author\/admin\/","name":"takeuforward111","image":{"@type":"ImageObject","@id":"https:\/\/takeuforward.org\/interviews\/must-do-questions-for-dbms-cn-os-interviews-sde-core-sheet\/#authorImage","url":"https:\/\/secure.gravatar.com\/avatar\/d97d6a9171db850702477a028b6c9f3f?s=96&d=mm&r=g","width":96,"height":96,"caption":"takeuforward111"},"sameAs":["https:\/\/www.youtube.com\/c\/takeUforward","https:\/\/www.linkedin.com\/company\/takeuforward\/"]},{"@type":"WebPage","@id":"https:\/\/takeuforward.org\/interviews\/must-do-questions-for-dbms-cn-os-interviews-sde-core-sheet\/#webpage","url":"https:\/\/takeuforward.org\/interviews\/must-do-questions-for-dbms-cn-os-interviews-sde-core-sheet\/","name":"MUST-DO Questions for [DBMS, CN, OS] Interviews: SDE Core Sheet - Interviews - Tutorial","description":"Detailed solution for MUST-DO Questions for [DBMS, CN, OS] Interviews: SDE Core Sheet - (Sheet for the sole purpose of quick revision and preparation in less time) Made with love by takeUforward! What is the SDE Core Sheet? SDE Core Sheet contains very handily crafted and picked interview questions of DBMS, OS, and CN. These questions are very helpful for the last-minute preparation for SDE interviews. 100+ students placed","inLanguage":"en-US","isPartOf":{"@id":"https:\/\/takeuforward.org\/#website"},"breadcrumb":{"@id":"https:\/\/takeuforward.org\/interviews\/must-do-questions-for-dbms-cn-os-interviews-sde-core-sheet\/#breadcrumblist"},"author":"https:\/\/takeuforward.org\/author\/admin\/#author","creator":"https:\/\/takeuforward.org\/author\/admin\/#author","datePublished":"2022-01-11T19:52:56+00:00","dateModified":"2022-03-01T08:29:23+00:00"},{"@type":"BlogPosting","@id":"https:\/\/takeuforward.org\/interviews\/must-do-questions-for-dbms-cn-os-interviews-sde-core-sheet\/#blogposting","name":"MUST-DO Questions for [DBMS, CN, OS] Interviews: SDE Core Sheet - Interviews - Tutorial","description":"Detailed solution for MUST-DO Questions for [DBMS, CN, OS] Interviews: SDE Core Sheet - (Sheet for the sole purpose of quick revision and preparation in less time) Made with love by takeUforward! What is the SDE Core Sheet? SDE Core Sheet contains very handily crafted and picked interview questions of DBMS, OS, and CN. These questions are very helpful for the last-minute preparation for SDE interviews. 100+ students placed","inLanguage":"en-US","headline":"MUST-DO Questions for [DBMS, CN, OS] Interviews: SDE Core Sheet","author":{"@id":"https:\/\/takeuforward.org\/author\/admin\/#author"},"publisher":{"@id":"https:\/\/takeuforward.org\/#organization"},"datePublished":"2022-01-11T19:52:56+00:00","dateModified":"2022-03-01T08:29:23+00:00","commentCount":4,"articleSection":"Interviews","mainEntityOfPage":{"@id":"https:\/\/takeuforward.org\/interviews\/must-do-questions-for-dbms-cn-os-interviews-sde-core-sheet\/#webpage"},"isPartOf":{"@id":"https:\/\/takeuforward.org\/interviews\/must-do-questions-for-dbms-cn-os-interviews-sde-core-sheet\/#webpage"},"image":{"@type":"ImageObject","@id":"https:\/\/takeuforward.org\/#articleImage","url":"https:\/\/takeuforward.org\/wp-content\/uploads\/2021\/09\/logo_circle_red.gif","width":333,"height":345}}]}
+		</script>
+
+<link rel="dns-prefetch" href="https://s.w.org/">
+<link href="https://fonts.gstatic.com/" crossorigin="" rel="preconnect">
+<link rel="alternate" type="application/rss+xml" title="takeUforward » Feed" href="https://takeuforward.org/feed/">
+<link rel="alternate" type="application/rss+xml" title="takeUforward » Comments Feed" href="https://takeuforward.org/comments/feed/">
+<link rel="alternate" type="application/rss+xml" title="takeUforward » MUST-DO Questions for [DBMS, CN, OS] Interviews: SDE Core Sheet Comments Feed" href="https://takeuforward.org/interviews/must-do-questions-for-dbms-cn-os-interviews-sde-core-sheet/feed/">
+<script type="text/javascript">window._wpemojiSettings={"baseUrl":"https:\/\/s.w.org\/images\/core\/emoji\/13.1.0\/72x72\/","ext":".png","svgUrl":"https:\/\/s.w.org\/images\/core\/emoji\/13.1.0\/svg\/","svgExt":".svg","source":{"concatemoji":"https:\/\/takeuforward.org\/wp-includes\/js\/wp-emoji-release.min.js?ver=5.8.2"}};!function(e,a,t){var n,r,o,i=a.createElement("canvas"),p=i.getContext&&i.getContext("2d");function s(e,t){var a=String.fromCharCode;p.clearRect(0,0,i.width,i.height),p.fillText(a.apply(this,e),0,0);e=i.toDataURL();return p.clearRect(0,0,i.width,i.height),p.fillText(a.apply(this,t),0,0),e===i.toDataURL()}function c(e){var t=a.createElement("script");t.src=e,t.defer=t.type="text/javascript",a.getElementsByTagName("head")[0].appendChild(t)}for(o=Array("flag","emoji"),t.supports={everything:!0,everythingExceptFlag:!0},r=0;r<o.length;r++)t.supports[o[r]]=function(e){if(!p||!p.fillText)return!1;switch(p.textBaseline="top",p.font="600 32px Arial",e){case"flag":return s([127987,65039,8205,9895,65039],[127987,65039,8203,9895,65039])?!1:!s([55356,56826,55356,56819],[55356,56826,8203,55356,56819])&&!s([55356,57332,56128,56423,56128,56418,56128,56421,56128,56430,56128,56423,56128,56447],[55356,57332,8203,56128,56423,8203,56128,56418,8203,56128,56421,8203,56128,56430,8203,56128,56423,8203,56128,56447]);case"emoji":return!s([10084,65039,8205,55357,56613],[10084,65039,8203,55357,56613])}return!1}(o[r]),t.supports.everything=t.supports.everything&&t.supports[o[r]],"flag"!==o[r]&&(t.supports.everythingExceptFlag=t.supports.everythingExceptFlag&&t.supports[o[r]]);t.supports.everythingExceptFlag=t.supports.everythingExceptFlag&&!t.supports.flag,t.DOMReady=!1,t.readyCallback=function(){t.DOMReady=!0},t.supports.everything||(n=function(){t.readyCallback()},a.addEventListener?(a.addEventListener("DOMContentLoaded",n,!1),e.addEventListener("load",n,!1)):(e.attachEvent("onload",n),a.attachEvent("onreadystatechange",function(){"complete"===a.readyState&&t.readyCallback()})),(n=t.source||{}).concatemoji?c(n.concatemoji):n.wpemoji&&n.twemoji&&(c(n.twemoji),c(n.wpemoji)))}(window,document,window._wpemojiSettings)</script><script src="./MUST-DO Questions for [DBMS, CN, OS] Interviews_ SDE Core Sheet - Interviews - Tutorial_files/wp-emoji-release.min.js.download" type="text/javascript" defer=""></script>
+<style type="text/css">img.wp-smiley,img.emoji{display:inline!important;border:none!important;box-shadow:none!important;height:1em!important;width:1em!important;margin:0 .07em!important;vertical-align:-0.1em!important;background:none!important;padding:0!important}</style>
+<style type="text/css" data-wpacu-inline-css-file="1">
+/*!/wp-content/plugins/truepush-free-web-push-notifications/views/css/truepush-menu-styles.css*/@font-face{font-family:'Truepush';src:url(/wp-content/plugins/truepush-free-web-push-notifications/views/css/fonts/Truepush.eot);src:url('/wp-content/plugins/truepush-free-web-push-notifications/views/css/fonts/Truepush.eot?7vfwjk#iefix') format('embedded-opentype'),url(/wp-content/plugins/truepush-free-web-push-notifications/views/css/fonts/Truepush.ttf?7vfwjk) format('truetype'),url(/wp-content/plugins/truepush-free-web-push-notifications/views/css/fonts/Truepush.woff?7vfwjk) format('woff'),url('/wp-content/plugins/truepush-free-web-push-notifications/views/css/fonts/Truepush.svg?7vfwjk#icomoon') format('svg');font-weight:400;font-style:normal;font-display:block}#adminmenu .toplevel_page_truepush-push.menu-icon-generic div.wp-menu-image:before{font-family:"Truepush"!important;content:"\e900";font-size:1.3em!important}#adminmenu #menu-posts-product .menu-icon-post div.wp-menu-image:before,#adminmenu #menu-posts-product .menu-icon-product div.wp-menu-image:before{font-family:"Truepush"!important;content:"\e900";font-size:1.3em!important}#adminmenu #toplevel_page_wc-reports .menu-icon-generic div.wp-menu-image:before{font-family:"Truepush"!important;content:"\e900";font-size:1.3em!important}
+</style>
+<link rel="stylesheet" id="maxwell-theme-fonts-css" href="./MUST-DO Questions for [DBMS, CN, OS] Interviews_ SDE Core Sheet - Interviews - Tutorial_files/maxwell-theme-fonts-vcf40c822ce8cad88974c8308e727c3b7a6d0ed45.css" type="text/css" media="all">
+<link rel="stylesheet" id="wp-block-library-css" href="./MUST-DO Questions for [DBMS, CN, OS] Interviews_ SDE Core Sheet - Interviews - Tutorial_files/style.min.css" type="text/css" media="all">
+<style type="text/css" data-wpacu-inline-css-file="1">
+/*!/wp-content/plugins/email-subscribers/lite/public/css/email-subscribers-public.css*/.es_caption{padding-bottom:1em;padding-right:.5em}.es_msg{padding-top:5px;padding-bottom:5px;color:red}.es_textbox{padding-bottom:10px}.es_button{padding-top:10px;padding-bottom:5px}.es_textbox_class{width:200px}.es_lablebox{padding-bottom:3px}.es_subscription_message.success{color:green;font-size:16px}.es_subscription_message.error{color:red;font-size:16px}.es_spinner_image{display:none;float:right}.es-field-wrap{margin-bottom:.6em}.ig-es-form-list-selection,.ig-es-form-list-selection td,.ig-es-form-list-selection tr,.ig-es-form-radio-selection,.ig-es-form-radio-selection td,.ig-es-form-radio-selection tr{border:none}.ig_es_form_wrapper{width:30%;margin:0 auto;border:2px #e8e3e3 solid;padding:.9em;border-radius:5px}.ig_es_form_heading{font-size:1.3em;line-height:1.5em;margin-bottom:.5em}.ig_es_list_checkbox{margin-right:.5em}.ig_es_submit{color:#FFFFFF!important;border-color:#03a025!important;background:#03a025!important;box-shadow:0 1px 0 #03a025;font-weight:700;height:2.4em;line-height:1em;cursor:pointer;border-width:1px;border-style:solid;-webkit-appearance:none;border-radius:3px;white-space:nowrap;box-sizing:border-box;font-size:1em;padding:0 2em;margin-top:1em}.ig_es_submit:hover{color:#FFF!important;background:#0AAB2E!important;border-color:#0AAB2E!important}.ig_es_form_wrapper hr{display:block;height:1px;border:0;border-top:1px solid #ccc;margin:1em 0;padding:0}.es_form_cf{padding:.75rem}select.es_form_cf,input[type="text"].es_form_cf,input[type="number"].es_form_cf,input[type="date"].es_form_cf{width:50%}
+</style>
+<link rel="stylesheet" id="maxwell-stylesheet-css" href="./MUST-DO Questions for [DBMS, CN, OS] Interviews_ SDE Core Sheet - Interviews - Tutorial_files/maxwell-stylesheet-v9dd29ce7cf28c29cb3d8288651799b700b3817bd.css" type="text/css" media="all">
+<style type="text/css" data-wpacu-inline-css-file="1">
+/*!/wp-content/themes/maxwell/assets/css/safari-flexbox-fixes.css*/@media screen and (min-color-index:0) and (-webkit-min-device-pixel-ratio:0){@media{.post-layout-columns .post-wrapper .post-column,.footer-widgets-columns .footer-widget-column{margin-right:-1px}}}@media not all and (min-resolution:.001dpcm){@media{.post-layout-columns .post-wrapper .post-column,.footer-widgets-columns .footer-widget-column{margin-right:-1px}}}
+</style>
+<script type="text/javascript" src="./MUST-DO Questions for [DBMS, CN, OS] Interviews_ SDE Core Sheet - Interviews - Tutorial_files/jquery.min.js.download" id="jquery-core-js"></script>
+<script type="text/javascript" src="./MUST-DO Questions for [DBMS, CN, OS] Interviews_ SDE Core Sheet - Interviews - Tutorial_files/jquery-migrate.min.js.download" id="jquery-migrate-js"></script>
+<!--[if lt IE 9]>
+<script   type='text/javascript' src='https://takeuforward.org/wp-content/themes/maxwell/assets/js/html5shiv.min.js?ver=3.7.3' id='html5shiv-js'></script>
+<![endif]-->
+<script type="text/javascript" src="./MUST-DO Questions for [DBMS, CN, OS] Interviews_ SDE Core Sheet - Interviews - Tutorial_files/svgxuse.min.js.download" id="svgxuse-js"></script>
+<link rel="https://api.w.org/" href="https://takeuforward.org/wp-json/"><link rel="alternate" type="application/json" href="https://takeuforward.org/wp-json/wp/v2/posts/152"><link rel="EditURI" type="application/rsd+xml" title="RSD" href="https://takeuforward.org/xmlrpc.php?rsd">
+<link rel="wlwmanifest" type="application/wlwmanifest+xml" href="https://takeuforward.org/wp-includes/wlwmanifest.xml">
+<meta name="generator" content="WordPress 5.8.2">
+<link rel="shortlink" href="https://takeuforward.org/?p=152">
+<link rel="alternate" type="application/json+oembed" href="https://takeuforward.org/wp-json/oembed/1.0/embed?url=https%3A%2F%2Ftakeuforward.org%2Finterviews%2Fmust-do-questions-for-dbms-cn-os-interviews-sde-core-sheet%2F">
+<link rel="alternate" type="text/xml+oembed" href="https://takeuforward.org/wp-json/oembed/1.0/embed?url=https%3A%2F%2Ftakeuforward.org%2Finterviews%2Fmust-do-questions-for-dbms-cn-os-interviews-sde-core-sheet%2F&amp;format=xml">
+<script>document.documentElement.className=document.documentElement.className.replace('no-js','js')</script>
+<style>.no-js img.lazyload{display:none}figure.wp-block-image img.lazyloading{min-width:150px}.lazyload,.lazyloading{opacity:0}.lazyloaded{opacity:1;transition:opacity 400ms;transition-delay:0ms}</style>
+<script type="application/javascript" src="./MUST-DO Questions for [DBMS, CN, OS] Interviews_ SDE Core Sheet - Interviews - Tutorial_files/app.js.download" async=""></script>
+<script>var truepush=window.Truepush||[];truepush.push(function(){truepush.Init({id:"61dbc600dbcca782e34d7a74",fromWordpress:!0,local:!1,wordpresspath:"https://takeuforward.org/wp-content/plugins/truepush-free-web-push-notifications/",},function(error){if(error)console.error(error)})})</script>
+<link rel="amphtml" href="https://takeuforward.org/interviews/must-do-questions-for-dbms-cn-os-interviews-sde-core-sheet/?amp=1"><link rel="icon" href="https://takeuforward.org/wp-content/uploads/2021/09/cropped-logo_circle_red-32x32.gif" sizes="32x32">
+<link rel="icon" href="https://takeuforward.org/wp-content/uploads/2021/09/cropped-logo_circle_red-192x192.gif" sizes="192x192">
+<link rel="apple-touch-icon" href="https://takeuforward.org/wp-content/uploads/2021/09/cropped-logo_circle_red-180x180.gif">
+<meta name="msapplication-TileImage" content="https://takeuforward.org/wp-content/uploads/2021/09/cropped-logo_circle_red-270x270.gif">
+<style type="text/css" id="wp-custom-css">.site-content{padding:0em 0 1em}.more-link{background-color:#EE4B2B}.pagination .current{background-color:#EE4B2B}.es_subscription_form input[type=submit]{background-color:#EE4B2B}.wp-block-group a{color:#EE4B2B}.wa_btn a{color:#FFF}.wa_share{text-decoration:none;background-color:#EE4B2B;border:none;color:#FFF;padding:15px 32px;text-align:center;display:inline-block}#diqus_loader{margin-left:40%}@media (max-width:767px){#diqus_loader{margin-left:19%}}@media (min-width:768px) and (max-width:1024px){#diqus_loader{margin-left:35%}}#toc_container{background:#f9f9f9 none repeat scroll 0 0;border:1px solid #aaa;display:table;font-size:95%;margin-bottom:1em;padding:20px;width:auto}.toc_title{font-weight:700;text-align:center}#toc_container li,#toc_container ul,#toc_container ul li{list-style:outside none none!important}details table{box-shadow:0 3px 5px rgba(0,0,0,.1)}details[open] summary~*{animation:open 0.3s ease-in-out}@keyframes open{0%{opacity:0}100%{opacity:1}}details summary::-webkit-details-marker{display:none}details summary{width:100%;padding:.5rem .5rem .5rem .5rem;box-shadow:0 3px 3px rgba(0,0,0,.1);position:relative;cursor:pointer;font-size:1.15rem;font-weight:300;list-style:none;font-family:"IBM Plex Sans",sans-serif;transition:background 0.3s}details[open] summary{background:#303030;color:#FFF;border-bottom:2px solid #EE4B2B;border-left:2px solid #EE4B2B}details summary:after{content:"+";color:#000;position:absolute;font-size:1.75rem;line-height:0;margin-top:.75rem;right:0;font-weight:200;transform-origin:center;transition:200ms linear}details[open] summary:after{transform:rotate(45deg);font-size:2rem;color:#FFF}details summary{outline:0}details p{font-size:.95rem;margin:0 0 1rem;padding-top:1rem}.containerCard{height:auto;display:flex;justify-content:center;align-items:center;font-family:-apple-system,BlinkMacSystemFont,"Segoe UI",Roboto,Oxygen,Ubuntu,Cantarell,"Open Sans","Helvetica Neue",sans-serif}.card{box-shadow:1px 1px 10px 1px #a1a1a1;border-radius:10px;padding:20px}.main-profile{display:flex;justify-content:space-between;margin-bottom:20px}.user-info img{width:100px;border-radius:50%}.user-info h3{font-size:1.3rem}.user-info p{color:#5b7083}.follow-btn a{font-size:1.5rem;border:3px solid #1da1f2;border-radius:25px;background-color:rgba(29,161,242,0);padding:8px 20px;margin:5px;font-weight:700;color:#1da1f2;cursor:pointer;outline:none;transition:all 0.2s ease-in-out;text-decoration:none}.follow-btn a:hover{background-color:rgba(29,161,242,.2)}.user-bio{color:#0f1419;margin-bottom:10px}.user-bio a{color:#1da1f2;text-decoration:none}.user-bio a:hover{text-decoration:underline}.user-follows{display:flex;color:#5b7083}.user-follows div{margin-right:10px}.user-follows b{color:#000}.navAds{position:-webkit-sticky;position:sticky;top:0;padding-top:8px;padding-bottom:8px;text-align:center;background:#fff;box-shadow:rgba(0,0,0,.1) 0 4px 12px}.navAds a{text-decoration:none;color:red;font-weight:700}.sticky-ads{position:fixed;bottom:0;left:0;width:100%;min-height:70px;max-height:200px;padding:5px 0;box-shadow:0 -6px 18px 0 rgba(9,32,76,.1);-webkit-transition:all .1s ease-in;transition:all .1s ease-in;display:flex;align-items:center;justify-content:center;background-color:#fefefe;z-index:20}.sticky-ads-close{width:30px;height:30px;display:flex;align-items:center;justify-content:center;border-radius:12px 0 0;position:absolute;right:0;top:-30px;background-color:#fefefe;box-shadow:0 -6px 18px 0 rgba(9,32,76,.08)}.sticky-ads .sticky-ads-close svg{width:22px;height:22px;fill:#000}.sticky-ads .sticky-ads-content{overflow:hidden;display:block;position:relative;height:70px;width:100%;margin-right:10px;margin-left:10px}.r-title{margin-top:var(--rTitleMarginTop,0)!important;margin-bottom:var(--rTitleMarginBottom,0)!important}p:not([class]){line-height:var(--cssTypographyLineHeight,1.78);margin-top:var(--cssTypographyBasicMargin,1em);margin-bottom:0}p:not([class]):first-child{margin-top:0}.text{display:var(--textDisplay,inline-flex);font-size:var(--textFontSize,1rem)}.time{display:var(--timeDisplay,inline-flex)}.time__month{margin-left:var(--timelineMounthMarginLeft,.25em)}.time{padding:var(--timePadding,.25rem 1.25rem .25rem);background-color:var(--timeBackgroundColor,#f0f0f0);font-size:var(--timeFontSize,.75rem);font-weight:var(--timeFontWeight,700);text-transform:var(--timeTextTransform,uppercase);color:var(--timeColor,currentColor)}.card{padding:var(--timelineCardPadding,1.5rem 1.5rem 1.25rem)}.card__content{margin-top:var(--cardContentMarginTop,.5rem)}.card{border-radius:var(--timelineCardBorderRadius,2px);border-left:var(--timelineCardBorderLeftWidth,3px) solid var(--timelineCardBorderLeftColor,var(--uiTimelineMainColor));box-shadow:var(--timelineCardBoxShadow,0 1px 3px 0 rgba(0,0,0,.12),0 1px 2px 0 rgba(0,0,0,.24));background-color:var(--timelineCardBackgroundColor,#fff)}.card__title{--rTitleMarginTop:var(--cardTitleMarginTop,1rem);font-size:var(--cardTitleFontSize,1.25rem)}.timeline{display:var(--timelineDisplay,grid);grid-row-gap:var(--timelineGroupsGap,2rem)}.timeline__year{margin-bottom:1.25rem}.timeline__cards{display:var(--timeloneCardsDisplay,grid);grid-row-gap:var(--timeloneCardsGap,1.5rem)}.timeline{--uiTimelineMainColor:var(--timelineMainColor,#222);--uiTimelineSecondaryColor:var(--timelineSecondaryColor,#fff);border-left:var(--timelineLineWidth,3px) solid var(--timelineLineBackgroundColor,var(--uiTimelineMainColor));padding-top:1rem;padding-bottom:1.5rem}.timeline__year{--timePadding:var(--timelineYearPadding,.5rem 1.5rem);--timeColor:var(--uiTimelineSecondaryColor);--timeBackgroundColor:var(--uiTimelineMainColor);--timeFontWeight:var(--timelineYearFontWeight,400)}.timeline__card{position:relative;margin-left:var(--timelineCardLineGap,1rem)}.timeline__cards{overflow:hidden;padding-top:.25rem;padding-bottom:.25rem}.timeline__card::before{content:"";width:100%;height:var(--timelineCardLineWidth,2px);background-color:var(--timelineCardLineBackgroundColor,var(--uiTimelineMainColor));position:absolute;top:var(--timelineCardLineTop,1rem);left:-50%;z-index:-1}.timeline{--timelineMainColor:#4557bb}.page{max-width:47rem;padding:5rem 2rem 3rem;margin-left:auto;margin-right:auto}.substack{border:1px solid #EEE;background-color:#fff;width:100%;max-width:480px;height:280px;margin:1rem auto;}.linktr{display:flex;justify-content:flex-end;padding:2rem;text-align:center}.linktr__goal{background-color:rgb(209,246,255);color:rgb(8,49,112);box-shadow:rgb(8 49 112 / 24%) 0 2px 8px 0;border-radius:2rem;padding:.75rem 1.5rem}</style>
+
+<script>(function(a,b,c){var d=a.history,e=document,f=navigator||{},g=localStorage,h=encodeURIComponent,i=d.pushState,k=function(){return Math.random().toString(36)},l=function(){return g.cid||(g.cid=k()),g.cid},m=function(r){var s=[];for(var t in r)
+r.hasOwnProperty(t)&&void 0!==r[t]&&s.push(h(t)+"="+h(r[t]));return s.join("&")},n=function(r,s,t,u,v,w,x){var z="https://www.google-analytics.com/collect",A=m({v:"1",ds:"web",aip:c.anonymizeIp?1:void 0,tid:b,cid:l(),t:r||"pageview",sd:c.colorDepth&&screen.colorDepth?screen.colorDepth+"-bits":void 0,dr:e.referrer||void 0,dt:e.title,dl:e.location.origin+e.location.pathname+e.location.search,ul:c.language?(f.language||"").toLowerCase():void 0,de:c.characterSet?e.characterSet:void 0,sr:c.screenSize?(a.screen||{}).width+"x"+(a.screen||{}).height:void 0,vp:c.screenSize&&a.visualViewport?(a.visualViewport||{}).width+"x"+(a.visualViewport||{}).height:void 0,ec:s||void 0,ea:t||void 0,el:u||void 0,ev:v||void 0,exd:w||void 0,exf:"undefined"!=typeof x&&!1==!!x?0:void 0});if(f.sendBeacon)f.sendBeacon(z,A);else{var y=new XMLHttpRequest;y.open("POST",z,!0),y.send(A)}};d.pushState=function(r){return"function"==typeof d.onpushstate&&d.onpushstate({state:r}),setTimeout(n,c.delay||10),i.apply(d,arguments)},n(),a.ma={trackEvent:function o(r,s,t,u){return n("event",r,s,t,u)},trackException:function q(r,s){return n("exception",null,null,null,null,r,s)}}})(window,"UA-210096275-1",{anonymizeIp:!0,colorDepth:!0,characterSet:!0,screenSize:!0,language:!0})</script>
+
+
+
+<script async="" custom-element="amp-analytics" src="./MUST-DO Questions for [DBMS, CN, OS] Interviews_ SDE Core Sheet - Interviews - Tutorial_files/amp-analytics-0.1.js.download" type="text/javascript"></script>
+<script type="application/javascript" src="./MUST-DO Questions for [DBMS, CN, OS] Interviews_ SDE Core Sheet - Interviews - Tutorial_files/main.js.download"></script><script type="application/javascript" src="./MUST-DO Questions for [DBMS, CN, OS] Interviews_ SDE Core Sheet - Interviews - Tutorial_files/main.js.download"></script><style>@import "https://fonts.googleapis.com/css?family=Nunito+Sans:400,600,700";.d-none{display:none}.d-block{display:block}.d-flex{display:-ms-flexbox!important;display:-webkit-box!important;display:flex!important}.truepush_optin_notifications{font-family:"Nunito Sans", sans-serif!important;border:none!important;font-size:14px;color:#000;margin:0;padding:0;-webkit-box-sizing:border-box;box-sizing:border-box}.truepush_optin_notifications .text-center{text-align:center!important}.truepush_optin_notifications .text-right{text-align:right!important}.truepush_optin_notifications .text-left{text-align:left!important}.truepush_optin_notifications .justify-content-center{-ms-flex-pack:center!important;-webkit-box-pack:center!important;justify-content:center!important}.truepush_optin_notifications .justify-content-start{-ms-flex-pack:start!important;-webkit-box-pack:start!important;justify-content:flex-start!important}.truepush_optin_notifications .justify-content-end{-ms-flex-pack:end!important;-webkit-box-pack:end!important;justify-content:flex-end!important}.truepush_optin_notifications .color-primary{color:#4a90e2}.truepush_optin_notifications .color-link{color:#4a90e2}.truepush_optin_notifications .p-rel{position:relative}.truepush_optin_notifications .p-abs{position:absolute}.truepush_optin_notifications .m-1{margin:6px!important}.truepush_optin_notifications .m-2{margin:12px!important}.truepush_optin_notifications .m-3{margin:18px!important}.truepush_optin_notifications .m-4{margin:24px!important}.truepush_optin_notifications .m-5{margin:30px!important}.truepush_optin_notifications .mx-1{margin-left:6px!important;margin-right:6px!important}.truepush_optin_notifications .mx-2{margin-left:12px!important;margin-right:12px!important}.truepush_optin_notifications .mx-3{margin-left:18px!important;margin-right:18px!important}.truepush_optin_notifications .mx-4{margin-left:24px!important;margin-right:24px!important}.truepush_optin_notifications .mx-5{margin-left:30px!important;margin-right:30px!important}.truepush_optin_notifications .my-1{margin-top:6px!important;margin-bottom:6px!important}.truepush_optin_notifications .my-2{margin-top:12px!important;margin-bottom:12px!important}.truepush_optin_notifications .my-3{margin-top:18px!important;margin-bottom:18px!important}.truepush_optin_notifications .my-4{margin-top:24px!important;margin-bottom:24px!important}.truepush_optin_notifications .my-5{margin-top:30px!important;margin-bottom:30px!important}.truepush_optin_notifications .mt-1{margin-top:6px!important}.truepush_optin_notifications .mt-2{margin-top:12px!important}.truepush_optin_notifications .mt3{margin-top:18px!important}.truepush_optin_notifications .mt-4{margin-top:24px!important}.truepush_optin_notifications .mt-5{margin-top:30px!important}.truepush_optin_notifications .mb-1{margin-bottom:6px!important}.truepush_optin_notifications .mb-2{margin-bottom:12px!important}.truepush_optin_notifications .mb-3{margin-bottom:18px!important}.truepush_optin_notifications .mb-4{margin-bottom:24px!important}.truepush_optin_notifications .mb-5{margin-bottom:30px!important}.truepush_optin_notifications .ml-1{margin-left:6px!important}.truepush_optin_notifications .ml-2{margin-left:12px!important}.truepush_optin_notifications .ml-3{margin-left:18px!important}.truepush_optin_notifications .ml-4{margin-left:24px!important}.truepush_optin_notifications .ml-5{margin-left:30px!important}.truepush_optin_notifications .mr-1{margin-right:6px!important}.truepush_optin_notifications .mr-2{margin-right:12px!important}.truepush_optin_notifications .mr-3{margin-right:18px!important}.truepush_optin_notifications .mr-4{margin-right:24px!important}.truepush_optin_notifications .mr-5{margin-right:30px!important}.truepush_optin_notifications .p-1{padding:6px!important}.truepush_optin_notifications .p-2{padding:12px!important}.truepush_optin_notifications .p-3{padding:18px!important}.truepush_optin_notifications .p-4{padding:24px!important}.truepush_optin_notifications .p-5{padding:30px!important}.truepush_optin_notifications .px-1{padding-left:6px!important;padding-right:6px!important}.truepush_optin_notifications .px-2{padding-left:12px!important;padding-right:12px!important}.truepush_optin_notifications .px-3{padding-left:18px!important;padding-right:18px!important}.truepush_optin_notifications .px-4{padding-left:24px!important;padding-right:24px!important}.truepush_optin_notifications .px-5{padding-left:30px!important;padding-right:30px!important}.truepush_optin_notifications .py-1{padding-top:6px!important;padding-bottom:6px!important}.truepush_optin_notifications .py-2{padding-top:12px!important;padding-bottom:12px!important}.truepush_optin_notifications .py-3{padding-top:18px!important;padding-bottom:18px!important}.truepush_optin_notifications .py-4{padding-top:24px!important;padding-bottom:24px!important}.truepush_optin_notifications .py-5{padding-top:30px!important;padding-bottom:30px!important}.truepush_optin_notifications .pt-1{padding-top:6px!important}.truepush_optin_notifications .pt-2{padding-top:12px!important}.truepush_optin_notifications .pt-3{padding-top:18px!important}.truepush_optin_notifications .pt-4{padding-top:24px!important}.truepush_optin_notifications .pt-5{padding-top:30px!important}.truepush_optin_notifications .pb-1{padding-bottom:6px!important}.truepush_optin_notifications .pb-2{padding-bottom:12px!important}.truepush_optin_notifications .pb-3{padding-bottom:18px!important}.truepush_optin_notifications .pb-4{padding-bottom:24px!important}.truepush_optin_notifications .pb-5{padding-bottom:30px!important}.truepush_optin_notifications .pl-1{padding-left:6px!important}.truepush_optin_notifications .pl-2{padding-left:12px!important}.truepush_optin_notifications .pl-3{padding-left:18px!important}.truepush_optin_notifications .pl-4{padding-left:24px!important}.truepush_optin_notifications .pl-5{padding-left:30px!important}.truepush_optin_notifications .pr-1{padding-right:6px!important}.truepush_optin_notifications .pr-2{padding-right:12px!important}.truepush_optin_notifications .pr-3{padding-right:18px!important}.truepush_optin_notifications .pr-4{padding-right:24px!important}.truepush_optin_notifications .pr-5{padding-right:30px!important}.truepush_optin_notifications .xy-m{position:absolute;top:50%;left:50%;-webkit-transform:translateX(-50%) translateY(-50%);-ms-transform:translateX(-50%) translateY(-50%);transform:translateX(-50%) translateY(-50%)}.truepush_optin_notifications .y-m{position:absolute;top:50%;-webkit-transform:translateY(-50%);-ms-transform:translateY(-50%);transform:translateY(-50%)}.truepush_optin_notifications .x-m{position:absolute;left:50%;-webkit-transform:translateX(-50%);-ms-transform:translateX(-50%);transform:translateX(-50%)}.truepush_optin_notifications .truepush_overlay{width:100%;height:100%;position:fixed;background:#000;background-color:rgba(0, 0, 0, 0.3);z-index:999999;left:0;right:0;margin:auto;top:0;overflow:hidden}.truepush_optin_notifications .defaultplus_truepush{width:800px;height:220px;position:fixed;top:0;left:0;z-index:9999999999999999}.truepush_optin_notifications .defaultplus_truepush:after{content:"";width:100%;height:100%;position:absolute;left:50%;top:50%;-webkit-filter:blur(80px);filter:blur(80px);background-color:rgba(0, 0, 0, 0.4);-webkit-transform:translateX(-50%) translateY(-50%);-ms-transform:translateX(-50%) translateY(-50%);transform:translateX(-50%) translateY(-50%)}.truepush_optin_notifications .defaultplus_truepush .defaultplus_box_tp{position:relative;z-index:99999999}.truepush_optin_notifications .defaultplus_truepush .defaultplus_box_tp .defaultplus_content_tp{position:absolute;top:20px;right:120px}.truepush_optin_notifications .defaultplus_truepush .defaultplus_box_tp .defaultplus_content_tp a{color:#fff!important;cursor:pointer!important;font-size:14px;font-weight:800;text-decoration:none!important;background:none;margin:0;padding:0;text-shadow:2px 2px 8px #7c7c7c;font-family:"Nunito Sans", sans-serif!important}.truepush_optin_notifications .defaultplus_truepush .defaultplus_box_tp .defaultplus_content_tp a:hover{text-decoration:underline!important}.truepush_optin_notifications .defaultplus_truepush .defaultplus_box_tp .defaultplus_content_tp a img{vertical-align:middle;margin:0 2px;width:18px}.truepush_optin_notifications .defaultplus_truepush .defaultplus_box_tp .defaultplus_content_tp span{color:#fff!important;text-decoration:underline!important}.truepush_optin_notifications .moz_defaultplus_truepush{width:960px}.truepush_optin_notifications .moz_defaultplus_truepush .defaultplus_content_tp{right:60px}.truepush_optin_notifications .opera_defaultplus_truepush .defaultplus_content_tp{right:160px}.truepush_optin_notifications .edge_defaultplus_truepush{width:100%!important;height:120px!important;bottom:0!important;left:0!important;top:auto}.truepush_optin_notifications .edge_defaultplus_truepush .defaultplus_content_tp{top:22px!important;left:22%!important}.truepush_optin_notifications .belloptin_truepush{position:fixed;right:25px;bottom:30px;z-index:999999999999!important;padding:2px;cursor:pointer}.truepush_optin_notifications .belloptin_truepush .bellcircle_optinicon{display:flex!important;display:-webkit-box!important;display:-ms-flexbox!important;-ms-flex-pack:center!important;justify-content:center!important;-ms-flex-align:center!important;align-items:center!important;text-align:center!important;-webkit-box-align:center!important;-webkit-box-pack:center!important;width:50px;height:50px;border-radius:50%;background:red;margin:0;padding:0}.truepush_optin_notifications .belloptin_truepush .bellcircle_optinicon svg{width:36px;height:36px;fill:#fff;vertical-align:sub;text-align:center;margin:0;padding:0}.truepush_optin_notifications .belloptin_truepush .tip-content{position:absolute;top:6px;right:9999px;width:200px;margin-right:83px;padding:10px;color:#fff;background:#333;-webkit-box-sizing:unset!important;box-sizing:unset!important;-webkit-box-shadow:2px 2px 5px #aaa;-moz-box-shadow:2px 2px 5px #aaa;box-shadow:2px 2px 5px #aaa;opacity:0;-webkit-transition:opacity 250ms ease-out;-moz-transition:opacity 250ms ease-out;-ms-transition:opacity 250ms ease-out;-o-transition:opacity 250ms ease-out;transition:opacity 250ms ease-out}.truepush_optin_notifications .belloptin_truepush .tip-content:before{content:"";position:absolute;top:50%;width:0;height:0;margin-left:184px;margin-top:-11px;border:10px solid transparent;border-left-color:#333}.truepush_optin_notifications .belloptin_truepush .bellcircle_optinicon:hover .tip-content{right:-20px;opacity:1}.truepush_optin_notifications .horizontalbar_truepush{position:fixed;bottom:0;width:100%;left:0;right:0;margin:0 auto;z-index:9999999}.truepush_optin_notifications .horizontalbar_truepush .bar_truepush{-webkit-box-pack:center;-ms-flex-pack:center;justify-content:center;padding:10px;background:#000;color:#fff}.truepush_optin_notifications .horizontalbar_truepush .bar_truepush .optinbar_content span{font-size:16px}.truepush_optin_notifications .horizontalbar_truepush .bar_truepush .optinbar_content button{display:inline!important;background-color:#4A90E2;color:#fff;border-width:0!important;padding:8px 12px!important;font-size:14px!important;font-weight:500;border:0;border-radius:2px;margin:0 auto!important;text-transform:none!important;font-family:"Nunito Sans", sans-serif!important}.truepush_optin_notifications .horizontalbar_truepush .bar_truepush .optinbar_content b{font-size:16px;cursor:pointer}.truepush_optin_notifications .optinbox_truepush{font-family:"Nunito Sans", sans-serif!important;position:fixed;top:0;margin:0;left:50%;-webkit-transform:translateX(-50%);-ms-transform:translateX(-50%);transform:translateX(-50%);z-index:999999999999!important;text-align:center;width:100%;max-width:360px;height:-webkit-max-content;height:-moz-max-content;height:max-content;background:#ffffff;border:1px solid #f0f0f0;margin:0 auto}.truepush_optin_notifications .optinbox_truepush .optinbox_tpsection{padding:12px 10px;display:-webkit-box;display:-ms-flexbox;display:flex;-webkit-box-pack:center;-ms-flex-pack:center;justify-content:center;text-align:center}.truepush_optin_notifications .optinbox_truepush .optinbox_tpsection h5{font-size:16px!important;font-weight:600;color:#282828!important;margin:0;line-height:1.4;text-transform:unset!important}.truepush_optin_notifications .optinbox_truepush .optinbox_tpsection p{font-size:13px;color:#7c7c7c;margin:12px 0;font-weight:500;padding:0;line-height:1.4}.truepush_optin_notifications .optinbox_truepush .optinbox_tpsection .optinbox_tpbuttons{text-align:center!important}.truepush_optin_notifications .optinbox_truepush .optinbox_tpsection .optinbox_tpbuttons button{padding:8px 26px;font-size:14px!important;font-weight:500;margin:6px;border-radius:2px;text-transform:unset!important;line-height:normal!important;letter-spacing:unset!important;font-family:"Nunito Sans", sans-serif!important}.truepush_optin_notifications .optinbox_truepush .optinbox_tpsection .optinbox_tpbuttons .tp_btn_default{background:#f2f4ff;border:1px solid #ebeefc;-webkit-box-shadow:0 0 8px 0 white;box-shadow:0 0 8px 0 white;color:#3b69ff;margin-left:0}.truepush_optin_notifications .optinbox_truepush .optinbox_tpsection .optinbox_tpbuttons .tp_btn_primary{background:#3b69ff;color:#fff;border:1px solid #3b69ff;-webkit-box-shadow:0 0 6px 0 #c0cfff;box-shadow:0 0 6px 0 #c0cfff}.truepush_optin_notifications .optinbox_truepush .optinbox_tpsection .optinbox_tpbuttons a{text-decoration:underline!important;cursor:pointer!important;font-size:12px;font-weight:500;padding:0;margin:0;color:#7c7c7c!important;font-family:"Nunito Sans", sans-serif!important}.truepush_optin_notifications .optinbox_plus_truepush{width:100%;max-width:350px;height:-webkit-max-content;height:-moz-max-content;height:max-content;margin:0 auto;background:#ffffff;border:1px solid #f0f0f0}.truepush_optin_notifications .optinbox_plus_truepush .optinbox_plus_tpsection{padding:10px}.truepush_optin_notifications .optinbox_plus_truepush .optinbox_plus_tpsection .optinbox_plus_media{display:-ms-flexbox;display:-webkit-box;display:flex;-ms-flex-align:start;-webkit-box-align:start;align-items:flex-start;text-align:left}.truepush_optin_notifications .optinbox_plus_truepush .optinbox_plus_tpsection .optinbox_plus_media .optinbox_plus_image{flex:0 0 60px;-webkit-box-flex:0;-ms-flex:0 0 60px;height:60px;margin-right:16px;overflow:hidden}.truepush_optin_notifications .optinbox_plus_truepush .optinbox_plus_tpsection .optinbox_plus_media .optinbox_plus_image img{max-width:100%;width:100%;border-radius:2px}.truepush_optin_notifications .optinbox_plus_truepush .optinbox_plus_tpsection .optinbox_plus_media .optinbox_plus_media_body{-ms-flex:1;-webkit-box-flex:1;flex:1}.truepush_optin_notifications .optinbox_plus_truepush .optinbox_plus_tpsection .optinbox_plus_media .optinbox_plus_media_body p{margin:0;font-size:15px;color:#484848;line-height:1.4;font-weight:600;font-family:"Nunito Sans", sans-serif!important;word-break:break-word}.truepush_optin_notifications .optinbox_plus_truepush .optinbox_plus_tpsection .optinbox_plus_media .optinbox_plus_media_body .subtext{font-size:13px!important;color:#686868!important;font-weight:400!important;padding-top:3px;font-family:"Nunito Sans", sans-serif!important;word-break:break-word}.truepush_optin_notifications .optinbox_plus_truepush .optinbox_plus_tpsection .optinbox_tpbuttons button{padding:8px 26px;font-size:14px;font-weight:500;margin:5px;border-radius:2px;font-family:"Nunito Sans", sans-serif!important}.truepush_optin_notifications .optinbox_plus_truepush .optinbox_plus_tpsection .optinbox_tpbuttons .tp_btn_default{background:#f2f4ff;border:1px solid #ebeefc;-webkit-box-shadow:0 0 8px 0 white;box-shadow:0 0 8px 0 white;color:#3b69ff;margin-left:0}.truepush_optin_notifications .optinbox_plus_truepush .optinbox_plus_tpsection .optinbox_tpbuttons .tp_btn_primary{background:#3b69ff;color:#fff;border:1px solid #3b69ff;-webkit-box-shadow:0 0 6px 0 #c0cfff;box-shadow:0 0 6px 0 #c0cfff}.truepush_optin_notifications .optinbox_plus_truepush .optinbox_plus_tpsection .optinbox_tpbuttons a{text-decoration:underline!important;cursor:pointer!important;font-size:12px;font-weight:500;padding:0;margin:0;color:#7c7c7c;font-family:"Nunito Sans", sans-serif!important}iframe{border:0;background:none;-webkit-box-shadow:none;box-shadow:none}.iframe_optinbell_tp{width:62px;height:62px;position:fixed;bottom:20px;right:30px;z-index:999999999}.iframe_optin_notifications .belloptin_truepush{right:50%!important;bottom:50%!important;-webkit-transform:translateX(50%) translateY(-50%);-ms-transform:translateX(50%) translateY(-50%);transform:translateX(50%) translateY(50%)}.iframe_optinbar_tp{position:fixed;width:100%;bottom:0;left:0;right:0;margin:0 auto;height:50px;z-index:9999999}.iframe_optinbox_tp{position:fixed;max-width:400px;width:100%;padding:0 5px;height:180px;top:0;left:50%;-webkit-transform:translateX(-50%);-ms-transform:translateX(-50%);transform:translateX(-50%);z-index:9999999}.optinbox_truepush_iframe{width:100%}.iframe_optinboxplus_tp{max-width:400px;width:100%;top:0;height:160px;position:fixed;left:50%;-webkit-transform:translateX(-50%);-ms-transform:translateX(-50%);transform:translateX(-50%);z-index:9999999}.optinboxplus_truepush_iframe{width:100%}.iframe_optin_notifications .optinbox_truepush_iframe{top:0!important;bottom:auto!important}.iframe_optin_notifications .optinboxplus_truepush_iframe{top:0!important;bottom:auto!important}.option-safari-background{position:fixed;top:0;left:0;z-index:999999;display:block;width:100%;height:100%;overflow:hidden;outline:0;background:#000;opacity:.7}.option-safari-background .safari-dialog{max-width:100%;margin:1.75rem auto}.option-safari-background .safari-dialog{position:relative;width:auto;margin:.5rem;pointer-events:none;z-index:999999!important}.option-safari-background .safari-content{position:absolute;display:-webkit-box;display:-ms-flexbox;display:flex;-webkit-box-orient:vertical;-webkit-box-direction:normal;-ms-flex-direction:column;flex-direction:column;width:100%;max-width:400px;pointer-events:auto;background-color:#fff;background-clip:padding-box;border:1px solid rgba(0, 0, 0, 0.2);border-radius:.3rem;outline:0}.option-safari-background .safari-header{display:-webkit-box;display:-ms-flexbox;display:flex;-webkit-box-align:start;-ms-flex-align:start;align-items:flex-start;-webkit-box-pack:justify;-ms-flex-pack:justify;justify-content:space-between;padding:1rem 1rem;border-top-left-radius:calc(.3rem - 1px);border-top-right-radius:calc(.3rem - 1px)}.option-safari-background .safari-body{position:relative;-webkit-box-flex:1;-ms-flex:1 1 auto;flex:1 1 auto;padding:1rem;padding-top:0}.option-safari-background .safari-footer{display:-webkit-box;display:-ms-flexbox;display:flex;-ms-flex-wrap:wrap;flex-wrap:wrap;-webkit-box-align:center;-ms-flex-align:center;align-items:center;-webkit-box-pack:end;-ms-flex-pack:end;justify-content:flex-end;padding:.75rem;border-top:1px solid #dee2e6;border-bottom-right-radius:calc(.3rem - 1px);border-bottom-left-radius:calc(.3rem - 1px)}.option-safari-background .safari-title{font-size:20px;text-align:right}.option-safari-background .safari-icons{display:-webkit-box;display:-ms-flexbox;display:flex;background:#c6c6c6;width:120px;margin-top:7px;padding:5px;border-bottom-left-radius:20px;border-top-left-radius:20px;background-image:-webkit-gradient(linear, left top, right top, from(#c6c6c6), color-stop(#c6c6c6), to(white));background-image:-webkit-linear-gradient(left, #c6c6c6, #c6c6c6, white);background-image:-o-linear-gradient(left, #c6c6c6, #c6c6c6, white);background-image:linear-gradient(to right, #c6c6c6, #c6c6c6, white)}.option-safari-background .bell{font-size:1.5rem;font-weight:700;line-height:.6!important;color:#000;text-shadow:0 1px 0 #fff;padding:1px 0px 4px 0px;padding-left:8px}.option-safari-background .bell1{font-size:1.5rem;font-weight:700;margin-right:7px;line-height:.6!important;border:0;outline:none;color:#000;text-shadow:0 1px 0 #fff}.option-safari-background .bell i{font-size:16px}.option-safari-background .bell1 i{font-size:16px;font-weight:bold;padding-left:15px}.option-safari-background span.safari-arrow{position:absolute;left:16%;top:47px;-webkit-transform:translateY(6%);-ms-transform:translateY(6%);transform:translateY(6%)}.option-safari-background .safari-arrow img{width:49px!important}.option-safari-background .safari-body p{text-align:right}.option-safari-background .safari-footersection{display:-webkit-box;display:-ms-flexbox;display:flex;position:absolute;bottom:0;padding:10px 20px;background-color:#fff;width:100%;-webkit-box-pack:justify;-ms-flex-pack:justify;justify-content:space-between}.option-safari-background .safari-footersection i{font-size:24px!important;color:#0678ff!important}.option-safari-background .safari-footersection h4{color:#000;font-weight:500;font-size:14px!important;padding-left:15px!important;padding-top:1px}.option-safari-background .safari-footersection .notification{display:-webkit-box!important;display:-ms-flexbox!important;display:flex!important}.option-safari-background .footer-icon i{font-size:24px!important;margin-left:7px;margin-top:5px;font-size:18px!important;color:#575757!important}.option-safari-background .safari-footersection .footer-text{color:#0678ff!important}.option-safari-background .footer-icon{width:28px!important;height:28px;border-radius:20px;margin-top:-1px}.option-safari-background .footer-icon:hover{width:28px!important;height:28px;border-radius:20px;background:darkgrey;margin-top:-1px;color:#fff}.option-safari-backgroung-left{position:fixed;top:0;left:0;z-index:999999;display:block;width:100%;height:100%;overflow:hidden;outline:0;background:#000;opacity:.7}.option-safari-backgroung-left .safari-dialog{max-width:100%;margin:1.75rem auto}.option-safari-backgroung-left .safari-dialog{position:relative;width:auto;margin:.5rem;pointer-events:none;z-index:999999!important}.option-safari-backgroung-left .safari-content{position:absolute;display:-webkit-box;display:-ms-flexbox;display:flex;-webkit-box-orient:vertical;-webkit-box-direction:normal;-ms-flex-direction:column;flex-direction:column;width:100%;right:0;max-width:400px;pointer-events:auto;background-color:#fff;background-clip:padding-box;border:1px solid rgba(0, 0, 0, 0.2);border-radius:.3rem;outline:0}.option-safari-backgroung-left .safari-header{display:-webkit-box;display:-ms-flexbox;display:flex;-webkit-box-align:start;-ms-flex-align:start;align-items:flex-start;-webkit-box-pack:justify;-ms-flex-pack:justify;justify-content:space-between;padding:1rem 1rem;border-top-left-radius:calc(.3rem - 1px);border-top-right-radius:calc(.3rem - 1px)}.option-safari-backgroung-left .safari-body{position:relative;-webkit-box-flex:1;-ms-flex:1 1 auto;flex:1 1 auto;padding:1rem;padding-top:0}.option-safari-backgroung-left .safari-footer{display:-webkit-box;display:-ms-flexbox;display:flex;-ms-flex-wrap:wrap;flex-wrap:wrap;-webkit-box-align:center;-ms-flex-align:center;align-items:center;-webkit-box-pack:end;-ms-flex-pack:end;justify-content:flex-end;padding:.75rem;border-top:1px solid #dee2e6;border-bottom-right-radius:calc(.3rem - 1px);border-bottom-left-radius:calc(.3rem - 1px)}.option-safari-backgroung-left .safari-title{font-size:20px}.option-safari-backgroung-left .safari-icons{background:#c6c6c6;width:120px;padding:5px;margin-top:7px;border-bottom-right-radius:20px;border-top-right-radius:20px;background-image:-webkit-gradient(linear, left top, right top, from(white), color-stop(#c6c6c6), to(#c6c6c6));background-image:-webkit-linear-gradient(left, white, #c6c6c6, #c6c6c6);background-image:-o-linear-gradient(left, white, #c6c6c6, #c6c6c6);background-image:linear-gradient(to right, white, #c6c6c6, #c6c6c6)}.option-safari-backgroung-left .bell{float:right;font-size:1.5rem;font-weight:700;padding:1px 0px 4px 0px;line-height:.5!important;color:#000;text-shadow:0 1px 0 #fff}.option-safari-backgroung-left .bell1{float:right;background-color:#c6c6c6;font-size:1.5rem;font-weight:700;margin-right:7px;line-height:.5!important;border:0;outline:none;color:#000;text-shadow:0 1px 0 #fff}.option-safari-backgroung-left .bell i{font-size:16px;padding-right:20px}.option-safari-backgroung-left .bell1 i{font-size:16px;font-weight:bold;padding-right:5px;padding-top:2px}.option-safari-backgroung-left span.safari-arrow{position:absolute;left:72%;top:46px;-webkit-transform:translateY(6%);-ms-transform:translateY(6%);transform:translateY(6%)}.option-safari-backgroung-left .safari-arrow img{width:49px!important}.option-safari-backgroung-left .safari-footersection .footer-text{color:#0678ff!important}.option-safari-backgroung-left .footer-icon{width:28px!important;height:28px;border-radius:20px;margin-top:-1px}.option-safari-backgroung-left .footer-icon:hover{width:28px!important;height:28px;border-radius:20px;background:darkgrey;margin-top:-1px;color:#fff}@media screen and (max-width:574.98px){.truepush_optin_notifications .defaultplus_truepush{width:100%;height:auto;bottom:0;top:auto;left:0}.truepush_optin_notifications .defaultplus_truepush .defaultplus_box_tp .defaultplus_content_tp{top:auto;left:40%;bottom:20px;-webkit-transform:translateX(-40%);-ms-transform:translateX(-40%);transform:translateX(-40%);right:auto}.truepush_optin_notifications .horizontalbar_truepush .bar_truepush .optinbar_content span{display:block;padding:0 0 12px 0!important}.truepush_optin_notifications .optinbox_truepush{top:auto;bottom:0}.iframe_optinbox_tp{top:auto;bottom:0;max-width:360px}.iframe_optinboxplus_tp{top:auto;bottom:0;max-width:360px}}@media screen and (max-width:398.98px){.truepush_optin_notifications .optinbox_truepush{max-width:98%}.truepush_optin_notifications .optinbox_truepush .optinbox_tpsection{padding:12px 8px}.truepush_optin_notifications .optinbox_truepush .optinbox_tpsection h5{font-size:14px;font-weight:600}.truepush_optin_notifications .optinbox_truepush .optinbox_tpsection p{font-size:12px}.iframe_optin_notifications .optinbox_truepush_iframe{top:auto!important;bottom:0!important}.iframe_optin_notifications .optinboxplus_truepush_iframe{top:auto!important;bottom:0!important}}@media screen and (min-width:320px) and (max-width:767px){.option-safari-background .safari-content{width:100%;max-width:270px}.option-safari-background .safari-icons{margin-top:4px!important}.option-safari-background .bell1 i,.option-safari-background .bell i{font-weight:bold!important;font-size:10px}.option-safari-background .bell1,.option-safari-background .bell{padding:1px 0px 3px 0px;line-height:.1!important}.option-safari-background .safari-title{font-size:14px}.option-safari-background .safari-body p{font-size:12px!important;margin-bottom:0rem}.option-safari-background .safari-header{padding-bottom:5px!important}.option-safari-background span.safari-arrow{left:18%;top:37px}.option-safari-background .safari-arrow img{width:25px!important}.option-safari-background .bell1 i{padding-left:10px}.option-safari-backgroung-left .bell i{padding-right:12px!important}.option-safari-backgroung-left .safari-content{width:100%;max-width:270px}.option-safari-backgroung-left .safari-icons{padding:6px;margin-top:4px!important}.option-safari-backgroung-left .bell1 i,.option-safari-backgroung-left .bell i{font-weight:bold!important;font-size:10px}.option-safari-backgroung-left .bell1,.option-safari-backgroung-left .bell{line-height:.1!important}.option-safari-backgroung-left .safari-title{font-size:14px}.option-safari-backgroung-left .safari-body p{font-size:12px!important;margin-bottom:0rem}.option-safari-backgroung-left .safari-header{padding-bottom:5px!important}.option-safari-backgroung-left span.safari-arrow{left:71%;top:38px}.option-safari-backgroung-left .safari-arrow img{width:25px!important}}</style></head><body class="post-template-default single single-post postid-152 single-format-standard wp-embed-responsive post-layout-one-column author-hidden" data-new-gr-c-s-check-loaded="14.1056.0" data-gr-ext-installed="" cz-shortcut-listen="true"><amp-analytics type="googleanalytics">
+<script type="application/json">
+{
+  "vars": {
+    "account": "UA-210096275-2"
+  },
+  "triggers": {
+    "default pageview": {
+      "on": "visible",
+      "request": "pageview",
+      "vars": {
+        "title": "Name of the Article"
+      }
+    }
+  }
+}
+</script>
+</amp-analytics>
+
+
+<script async="" custom-element="amp-auto-ads" src="./MUST-DO Questions for [DBMS, CN, OS] Interviews_ SDE Core Sheet - Interviews - Tutorial_files/amp-auto-ads-0.1.js.download">
+</script>
+
+
+
+
+<amp-auto-ads type="adsense" data-ad-client="ca-pub-4354768384472857">
+</amp-auto-ads>
+
+
+<div id="page" class="hfeed site">
+<a class="skip-link screen-reader-text" href="https://takeuforward.org/interviews/must-do-questions-for-dbms-cn-os-interviews-sde-core-sheet/#content">Skip to content</a>
+<header id="masthead" class="site-header clearfix" role="banner">
+<div class="header-main container clearfix">
+<div id="logo" class="site-branding clearfix">
+<p class="site-title"><a href="https://takeuforward.org/" rel="home">takeUforward</a></p>
+<p class="site-description">~ Strive for Excellence</p>
+</div>
+<div class="header-widgets clearfix">
+<aside id="block-10" class="header-widget widget_block">
+<ul class="wp-block-social-links"><li class="wp-social-link wp-social-link-youtube wp-block-social-link"><a href="https://www.youtube.com/channel/UCJskGeByzRRSvmOyZOz61ig" aria-label="YouTube: https://www.youtube.com/channel/UCJskGeByzRRSvmOyZOz61ig" class="wp-block-social-link-anchor"> <svg width="24" height="24" viewBox="0 0 24 24" version="1.1" xmlns="http://www.w3.org/2000/svg" role="img" aria-hidden="true" focusable="false"><path d="M21.8,8.001c0,0-0.195-1.378-0.795-1.985c-0.76-0.797-1.613-0.801-2.004-0.847c-2.799-0.202-6.997-0.202-6.997-0.202 h-0.009c0,0-4.198,0-6.997,0.202C4.608,5.216,3.756,5.22,2.995,6.016C2.395,6.623,2.2,8.001,2.2,8.001S2,9.62,2,11.238v1.517 c0,1.618,0.2,3.237,0.2,3.237s0.195,1.378,0.795,1.985c0.761,0.797,1.76,0.771,2.205,0.855c1.6,0.153,6.8,0.201,6.8,0.201 s4.203-0.006,7.001-0.209c0.391-0.047,1.243-0.051,2.004-0.847c0.6-0.607,0.795-1.985,0.795-1.985s0.2-1.618,0.2-3.237v-1.517 C22,9.62,21.8,8.001,21.8,8.001z M9.935,14.594l-0.001-5.62l5.404,2.82L9.935,14.594z"></path></svg></a></li>
+<li class="wp-social-link wp-social-link-telegram wp-block-social-link"><a href="https://wa.me/?text=Hi,I%20have%20found%20the%20best%20free%20resource%20to%20prepare%20for%20product%20companies%20-%20Amazon,%20Microsoft%20etc%20interview.Check%20out%20Striver%27s%20SDE%20Sheet:%20https://bit.ly/3zquqSuEverything%20you%20need%20for%20structured%20interview%20prep%20for%20free." aria-label="Telegram: https://wa.me/?text=Hi,%0a%0aI%20have%20found%20the%20best%20free%20resource%20to%20prepare%20for%20product%20companies%20-%20Amazon,%20Microsoft%20etc%20interview.%0a%0aCheck%20out%20Striver%27s%20SDE%20Sheet:%20https://bit.ly/3zquqSu%0a%0aEverything%20you%20need%20for%20structured%20interview%20prep%20for%20free." class="wp-block-social-link-anchor"> <svg width="24" height="24" viewBox="0 0 128 128" version="1.1" xmlns="http://www.w3.org/2000/svg" role="img" aria-hidden="true" focusable="false"><path d="M28.9700376,63.3244248 C47.6273373,55.1957357 60.0684594,49.8368063 66.2934036,47.2476366 C84.0668845,39.855031 87.7600616,38.5708563 90.1672227,38.528 C90.6966555,38.5191258 91.8804274,38.6503351 92.6472251,39.2725385 C93.294694,39.7979149 93.4728387,40.5076237 93.5580865,41.0057381 C93.6433345,41.5038525 93.7494885,42.63857 93.6651041,43.5252052 C92.7019529,53.6451182 88.5344133,78.2034783 86.4142057,89.5379542 C85.5170662,94.3339958 83.750571,95.9420841 82.0403991,96.0994568 C78.3237996,96.4414641 75.5015827,93.6432685 71.9018743,91.2836143 C66.2690414,87.5912212 63.0868492,85.2926952 57.6192095,81.6896017 C51.3004058,77.5256038 55.3966232,75.2369981 58.9976911,71.4967761 C59.9401076,70.5179421 76.3155302,55.6232293 76.6324771,54.2720454 C76.6721165,54.1030573 76.7089039,53.4731496 76.3346867,53.1405352 C75.9604695,52.8079208 75.4081573,52.921662 75.0095933,53.0121213 C74.444641,53.1403447 65.4461175,59.0880351 48.0140228,70.8551922 C45.4598218,72.6091037 43.1463059,73.4636682 41.0734751,73.4188859 C38.7883453,73.3695169 34.3926725,72.1268388 31.1249416,71.0646282 C27.1169366,69.7617838 23.931454,69.0729605 24.208838,66.8603276 C24.3533167,65.7078514 25.9403832,64.5292172 28.9700376,63.3244248 Z"></path></svg></a></li>
+<li class="wp-social-link wp-social-link-linkedin wp-block-social-link"><a href="https://www.linkedin.com/company/takeuforward/" aria-label="LinkedIn: https://www.linkedin.com/company/takeuforward/" class="wp-block-social-link-anchor"> <svg width="24" height="24" viewBox="0 0 24 24" version="1.1" xmlns="http://www.w3.org/2000/svg" role="img" aria-hidden="true" focusable="false"><path d="M19.7,3H4.3C3.582,3,3,3.582,3,4.3v15.4C3,20.418,3.582,21,4.3,21h15.4c0.718,0,1.3-0.582,1.3-1.3V4.3 C21,3.582,20.418,3,19.7,3z M8.339,18.338H5.667v-8.59h2.672V18.338z M7.004,8.574c-0.857,0-1.549-0.694-1.549-1.548 c0-0.855,0.691-1.548,1.549-1.548c0.854,0,1.547,0.694,1.547,1.548C8.551,7.881,7.858,8.574,7.004,8.574z M18.339,18.338h-2.669 v-4.177c0-0.996-0.017-2.278-1.387-2.278c-1.389,0-1.601,1.086-1.601,2.206v4.249h-2.667v-8.59h2.559v1.174h0.037 c0.356-0.675,1.227-1.387,2.526-1.387c2.703,0,3.203,1.779,3.203,4.092V18.338z"></path></svg></a></li>
+<li class="wp-social-link wp-social-link-instagram wp-block-social-link"><a href="https://www.instagram.com/striver_79/" aria-label="Instagram: https://www.instagram.com/striver_79/" class="wp-block-social-link-anchor"> <svg width="24" height="24" viewBox="0 0 24 24" version="1.1" xmlns="http://www.w3.org/2000/svg" role="img" aria-hidden="true" focusable="false"><path d="M12,4.622c2.403,0,2.688,0.009,3.637,0.052c0.877,0.04,1.354,0.187,1.671,0.31c0.42,0.163,0.72,0.358,1.035,0.673 c0.315,0.315,0.51,0.615,0.673,1.035c0.123,0.317,0.27,0.794,0.31,1.671c0.043,0.949,0.052,1.234,0.052,3.637 s-0.009,2.688-0.052,3.637c-0.04,0.877-0.187,1.354-0.31,1.671c-0.163,0.42-0.358,0.72-0.673,1.035 c-0.315,0.315-0.615,0.51-1.035,0.673c-0.317,0.123-0.794,0.27-1.671,0.31c-0.949,0.043-1.233,0.052-3.637,0.052 s-2.688-0.009-3.637-0.052c-0.877-0.04-1.354-0.187-1.671-0.31c-0.42-0.163-0.72-0.358-1.035-0.673 c-0.315-0.315-0.51-0.615-0.673-1.035c-0.123-0.317-0.27-0.794-0.31-1.671C4.631,14.688,4.622,14.403,4.622,12 s0.009-2.688,0.052-3.637c0.04-0.877,0.187-1.354,0.31-1.671c0.163-0.42,0.358-0.72,0.673-1.035 c0.315-0.315,0.615-0.51,1.035-0.673c0.317-0.123,0.794-0.27,1.671-0.31C9.312,4.631,9.597,4.622,12,4.622 M12,3 C9.556,3,9.249,3.01,8.289,3.054C7.331,3.098,6.677,3.25,6.105,3.472C5.513,3.702,5.011,4.01,4.511,4.511 c-0.5,0.5-0.808,1.002-1.038,1.594C3.25,6.677,3.098,7.331,3.054,8.289C3.01,9.249,3,9.556,3,12c0,2.444,0.01,2.751,0.054,3.711 c0.044,0.958,0.196,1.612,0.418,2.185c0.23,0.592,0.538,1.094,1.038,1.594c0.5,0.5,1.002,0.808,1.594,1.038 c0.572,0.222,1.227,0.375,2.185,0.418C9.249,20.99,9.556,21,12,21s2.751-0.01,3.711-0.054c0.958-0.044,1.612-0.196,2.185-0.418 c0.592-0.23,1.094-0.538,1.594-1.038c0.5-0.5,0.808-1.002,1.038-1.594c0.222-0.572,0.375-1.227,0.418-2.185 C20.99,14.751,21,14.444,21,12s-0.01-2.751-0.054-3.711c-0.044-0.958-0.196-1.612-0.418-2.185c-0.23-0.592-0.538-1.094-1.038-1.594 c-0.5-0.5-1.002-0.808-1.594-1.038c-0.572-0.222-1.227-0.375-2.185-0.418C14.751,3.01,14.444,3,12,3L12,3z M12,7.378 c-2.552,0-4.622,2.069-4.622,4.622S9.448,16.622,12,16.622s4.622-2.069,4.622-4.622S14.552,7.378,12,7.378z M12,15 c-1.657,0-3-1.343-3-3s1.343-3,3-3s3,1.343,3,3S13.657,15,12,15z M16.804,6.116c-0.596,0-1.08,0.484-1.08,1.08 s0.484,1.08,1.08,1.08c0.596,0,1.08-0.484,1.08-1.08S17.401,6.116,16.804,6.116z"></path></svg></a></li>
+<li class="wp-social-link wp-social-link-twitter wp-block-social-link"><a href="https://bit.ly/32QbLD6" aria-label="Twitter: https://bit.ly/32QbLD6" class="wp-block-social-link-anchor"> <svg width="24" height="24" viewBox="0 0 24 24" version="1.1" xmlns="http://www.w3.org/2000/svg" role="img" aria-hidden="true" focusable="false"><path d="M22.23,5.924c-0.736,0.326-1.527,0.547-2.357,0.646c0.847-0.508,1.498-1.312,1.804-2.27 c-0.793,0.47-1.671,0.812-2.606,0.996C18.324,4.498,17.257,4,16.077,4c-2.266,0-4.103,1.837-4.103,4.103 c0,0.322,0.036,0.635,0.106,0.935C8.67,8.867,5.647,7.234,3.623,4.751C3.27,5.357,3.067,6.062,3.067,6.814 c0,1.424,0.724,2.679,1.825,3.415c-0.673-0.021-1.305-0.206-1.859-0.513c0,0.017,0,0.034,0,0.052c0,1.988,1.414,3.647,3.292,4.023 c-0.344,0.094-0.707,0.144-1.081,0.144c-0.264,0-0.521-0.026-0.772-0.074c0.522,1.63,2.038,2.816,3.833,2.85 c-1.404,1.1-3.174,1.756-5.096,1.756c-0.331,0-0.658-0.019-0.979-0.057c1.816,1.164,3.973,1.843,6.29,1.843 c7.547,0,11.675-6.252,11.675-11.675c0-0.178-0.004-0.355-0.012-0.531C20.985,7.47,21.68,6.747,22.23,5.924z"></path></svg></a></li>
+<li class="wp-social-link wp-social-link-facebook wp-block-social-link"><a href="https://bit.ly/3mJHMDY" aria-label="Facebook: https://bit.ly/3mJHMDY" class="wp-block-social-link-anchor"> <svg width="24" height="24" viewBox="0 0 24 24" version="1.1" xmlns="http://www.w3.org/2000/svg" role="img" aria-hidden="true" focusable="false"><path d="M12 2C6.5 2 2 6.5 2 12c0 5 3.7 9.1 8.4 9.9v-7H7.9V12h2.5V9.8c0-2.5 1.5-3.9 3.8-3.9 1.1 0 2.2.2 2.2.2v2.5h-1.3c-1.2 0-1.6.8-1.6 1.6V12h2.8l-.4 2.9h-2.3v7C18.3 21.1 22 17 22 12c0-5.5-4.5-10-10-10z"></path></svg></a></li></ul>
+</aside>
+</div>
+</div>
+<div id="main-navigation-wrap" class="primary-navigation-wrap">
+<button class="primary-menu-toggle menu-toggle" aria-controls="primary-menu" aria-expanded="false">
+<svg class="icon icon-menu" aria-hidden="true" role="img"> <use xlink:href="https://takeuforward.org/wp-content/themes/maxwell/assets/icons/genericons-neue.svg#menu"></use> </svg><svg class="icon icon-close" aria-hidden="true" role="img"> <use xlink:href="https://takeuforward.org/wp-content/themes/maxwell/assets/icons/genericons-neue.svg#close"></use> </svg> <span class="menu-toggle-text">Navigation</span>
+</button>
+<div class="primary-navigation">
+<nav id="site-navigation" class="main-navigation" role="navigation" aria-label="Primary Menu">
+<ul id="primary-menu" class="menu"><li id="menu-item-149" class="menu-item menu-item-type-post_type menu-item-object-post menu-item-149"><a href="https://takeuforward.org/interviews/strivers-sde-sheet-top-coding-interview-problems/">Striver’s SDE Sheet</a></li>
+<li id="menu-item-154" class="menu-item menu-item-type-post_type menu-item-object-post current-menu-item menu-item-154"><a href="https://takeuforward.org/interviews/must-do-questions-for-dbms-cn-os-interviews-sde-core-sheet/" aria-current="page">SDE Core Sheet</a></li>
+<li id="menu-item-207" class="menu-item menu-item-type-custom menu-item-object-custom menu-item-207"><a href="https://takeuforward.org/category/interview-experience/">Interview Experience</a></li>
+<li id="menu-item-242" class="menu-item menu-item-type-taxonomy menu-item-object-category menu-item-242"><a href="https://takeuforward.org/category/data-structure/">Data Structure</a></li>
+<li id="menu-item-3224" class="menu-item menu-item-type-custom menu-item-object-custom menu-item-3224"><a href="https://takeuforward.org/advertise/advertise-with-us/">Advertise with us</a></li>
+<li id="menu-item-1583" class="menu-item menu-item-type-post_type menu-item-object-page menu-item-1583"><a href="https://takeuforward.org/register/">Join takeUforward</a></li>
+</ul> </nav>
+</div>
+</div>
+</header>
+<div id="content" class="site-content container clearfix">
+<section id="primary" class="content-single content-area">
+<main id="main" class="site-main" role="main">
+<article id="post-152" class="post-152 post type-post status-publish format-standard hentry category-interviews">
+<header class="entry-header">
+<div class="entry-meta"><span class="meta-date"><a href="https://takeuforward.org/interviews/must-do-questions-for-dbms-cn-os-interviews-sde-core-sheet/" title="7:52 pm" rel="bookmark"><time class="entry-date published updated" datetime="2022-01-11T19:52:56+00:00">January 11, 2022</time></a></span><span class="meta-category"> <a href="https://takeuforward.org/category/interviews/" rel="category tag">Interviews</a></span></div>
+<h1 class="entry-title">MUST-DO Questions for [DBMS, CN, OS] Interviews: SDE Core Sheet</h1>
+</header>
+<div class="entry-content clearfix">
+<p class="has-text-align-center">(Sheet for the sole purpose of quick revision and preparation in less time) </p>
+<p class="has-text-align-center">Made with <span class="has-inline-color has-accent-color">love</span> by takeUforward!</p>
+<h3>What is the SDE Core Sheet?&nbsp;</h3>
+<p>SDE Core Sheet contains very handily crafted and picked interview questions of DBMS, OS, and CN. These questions are very helpful for the last-minute preparation for SDE interviews. <em>100+ students placed already with the help of the SDE Core Sheet!</em></p>
+<h3>Why trust this sheet?&nbsp;</h3>
+<p>This sheet is prepared by Raj Vikramaditya A.K.A Striver, Candidate Master, 6*, Currently working with Media.net (Directi), an ex Intern at Amazon India. Major success with the previous sheets, and more importantly trusted by his “TAKEUFORWARD FAM”&nbsp;</p>
+<h2 class="has-text-align-center">Question Bank Starts</h2>
+<h3><strong>Operating System</strong>:</h3>
+<details>
+<summary>What is the main purpose of an operating system? Discuss different types?&nbsp;</summary>
+<p>An operating system (OS) is system software that manages computer hardware, software resources, and provides common services for computer programs. So it manages the computer’s memory, processes, devices, files, and security aspects of the system. It also allows us to communicate with the computer without knowing how to speak the computer’s language. Without an operating system, a computer is not useful.</p>
+<p>Types of operating system:</p>
+<ul>
+<li>Batch OS</li>
+<li>Distributed OS</li>
+<li>Multitasking OS</li>
+<li>Network OS</li>
+<li>Real-Time OS</li>
+<li>Mobile OS</li>
+</ul>
+<p>Reference: <a href="https://www.geeksforgeeks.org/types-of-operating-systems/" target="_blank" rel="noopener">https://www.geeksforgeeks.org/types-of-operating-systems/</a></p>
+</details><details>
+<summary>What is a socket, kernel and monolithic kernel ?&nbsp;</summary>
+<p>Socket:<br>A socket is defined as an endpoint for communication, A pair of processes communicating over a network employ a pair of sockets ,one for each process. A socket is identified by an IP address concatenated with a port number.<br>The server waits for incoming client requests by listening to a specified port. Once a request is received, the server accepts a connection from the client socket to complete the connection.</p>
+<p>Kernel is the central core component of an operating system that manages operations of computer and hardware. Kernel Establishes communication between user level application and hardware. Manages memory and CPU time. Decides state of incoming processes. Controls Disk, Memory, Task Management</p>
+<p><b>Monolithic Kernel</b> (provides good performance but lots of lines of code)<br>It is one of the types of kernel where all operating system services operate in kernel space. It has dependencies between system components. It has huge lines of code which is complex.<br>Example : Unix, Linux, Open VMS, XTS-400 etc.</p>
+</details><details>
+<summary>Difference between process and program and thread? Different types of process.&nbsp;</summary>
+<p><b>Process:</b><br>Process is an instance of an executing program. For example, we write our computer programs in a text file and when we execute this program, it becomes a process which performs all the tasks mentioned in the program.</p>
+<p><b>Program:</b><br>Program is a set of instructions to perform a certain task. Eg: chrome.exe, notepad.exe</p>
+<p><b>Thread:</b><br>Thread is a path of execution within a process. A thread is also known as a lightweight process. The idea is to achieve parallelism by dividing a process into multiple threads. For example,Word processor uses multiple threads: one thread to format the text, another thread to process inputs.</p>
+</details><details>
+<summary>Define virtual memory, thrashing, threads.&nbsp;&nbsp;</summary>
+<p><b>Virtual Memory:</b><br>A computer can address more memory than the amount physically installed on the system. This extra memory is actually called virtual memory and it is a section of a hard disk that’s set up to emulate the computer’s RAM.<br>The main visible advantage of this scheme is that programs can be larger than physical memory. Virtual memory serves two purposes. First, it allows us to extend the use of physical memory by using a disk. Second, it allows us to have memory protection, because each virtual address is translated to a physical address.</p>
+<p><b>Thrashing: </b><br>Thrashing is a condition or a situation when the system is spending a major portion of its time in servicing the page faults, but the actual processing done is very negligible. High degree of multiprogramming(if number of processes keeps on increasing in the memory), lack of frames (if a process is allocated too few frames, then there will be too many and too frequent page faults) causes Thrashing.</p>
+<p><b>Threads:</b><br>A thread is a single sequential flow of execution of tasks of a process so it is also known as thread of execution or thread of control.</p>
+</details><details>
+<summary>What is RAID ? Different types.&nbsp;</summary>
+<p>RAID, or “Redundant Arrays of Independent Disks” is a technique which makes use of a combination of multiple disks instead of using a single disk for increased performance, data redundancy or both.Data redundancy, although taking up extra space, adds to disk reliability. This means, in case of disk failure, if the same data is also backed up onto another disk, we can retrieve the data and go on with the operation.</p>
+</details><details>
+<summary>What is a deadlock? Different conditions to achieve a deadlock.&nbsp;</summary>
+<p>A Deadlock is a situation where each of the computer processes waits for a resource which is being assigned to some other process. In this situation, none of the processes gets executed since the resource it needs is held by some other process which is also waiting for some other resource to be released.</p>
+<p><b>How deadlock is achieved: </b> Deadlock happens when Mutual exclusion, hold and wait, No preemption and circular wait occurs simultaneously.</p>
+<p>Necessary Conditions for deadlock:</p>
+<ol>
+<li>Mutual Exclusion</li>
+<li>Hold and Wait</li>
+<li>No preemption</li>
+<li>Circular Wait</li>
+</ol>
+</details><details>
+<summary>What is fragmentation? Types of fragmentation.&nbsp;</summary>
+<p><b>Fragmentation:</b><br>An unwanted problem in the operating system in which the processes are loaded and unloaded from memory, and free memory space is fragmented. Processes can’t be assigned to memory blocks due to their small size, and the memory blocks stay unused. It is also necessary to understand that as programs are loaded and deleted from memory, they generate free space or a hole in the memory. These small blocks cannot be allotted to new arriving processes, resulting in inefficient memory use.</p>
+<p>The conditions of fragmentation depend on the memory allocation system. As the process is loaded and unloaded from memory, these areas are fragmented into small pieces of memory that cannot be allocated to incoming processes. It is called fragmentation.</p>
+<p>Types of fragmentation:<br>1. Internal<br>2. External</p>
+</details><details>
+<summary>What is spooling ?&nbsp;</summary>
+<p>SPOOL is an acronym for simultaneous peripheral operations online. Spooling is a process in which data is temporarily held to be used and executed by a device, program, or system.<br>In spooling, there is no interaction between the I/O devices and the CPU. That means there is no need for the CPU to wait for the I/O operations to take place. Such operations take a long time to finish executing, so the CPU will not wait for them to finish.<br>The biggest example of Spooling is printing. The documents which are to be printed are stored in the SPOOL and then added to the queue for printing. During this time, many processes can perform their operations and use the CPU without waiting while the printer executes the printing process on the documents one-by-one.</p>
+</details><details>
+<summary>What is semaphore and mutex (Differences might be asked)? Define Binary semaphore.&nbsp;</summary>
+</details><details>
+<summary>Belady’s Anomaly</summary>
+<p>Bélády’s anomaly is the name given to the phenomenon where increasing the number of page frames results in an increase in the number of page faults for a given memory access pattern.</p>
+<p><b>Solution to fix Belady’s Anomaly:</b><br>Implementing alternative page replacement algo helps eliminate Belady’s Anomaly.. Use of stack based algorithms, such as Optimal Page Replacement Algorithm and Least Recently Used (LRU) algorithm, can eliminate the issue of increased page faults as these algorithms assign priority to pages</p>
+</details><details>
+<summary>Starving and Aging in OS</summary>
+<p>Starving/Starvation(also called Lived lock): Starvation is the problem that occurs when low priority processes get jammed for an unspecified time as the high priority processes keep executing. So starvation happens if a method is indefinitely delayed.</p>
+<p>Solution to Starvation : Ageing is a technique of gradually increasing the priority of processes that wait in the system for a long time.</p>
+</details><details>
+<summary>Why does trashing occur?&nbsp;</summary>
+<p>High degree of multiprogramming(if number of processes keeps on increasing in the memory) , lack of frames(if a process is allocated too few frames, then there will be too many and too frequent page faults.) causes Thrashing.</p>
+</details><details>
+<summary>What is paging and why do we need it?&nbsp;</summary>
+<p>Paging is a memory management scheme that eliminates the need for contiguous allocation of physical memory. This scheme permits the physical address space of a process to be non – contiguous.<br>Paging is used for faster access to data. When a program needs a page, it is available in the main memory(RAM) as the OS copies a certain number of pages from your storage device to main memory. Paging allows the physical address space of a process to be noncontiguous.</p>
+</details><details>
+<summary>Demand Paging, Segmentation&nbsp;</summary>
+<p>Demand paging is a method of virtual memory management which is based on the principle that pages should only be brought into memory if the executing process demands them. This is often referred to as lazy evaluation as only those pages demanded by the process are swapped from secondary storage to main memory.<br>So demand paging works opposite to the principle of loading all pages immediately.</p>
+<p>Segmentation is a memory management technique in which the memory is divided into the variable size parts. Each part is known as a segment which can be allocated to a process.</p>
+<p>The details about each segment are stored in a table called a segment table. Segment table is stored in one (or many) of the segments.</p>
+<p>Segment table contains mainly two information about segment:</p>
+<p>Base: It is the base address of the segment<br>Limit: It is the length of the segment.</p>
+</details><details>
+<summary>Real Time Operating System, types of RTOS.&nbsp;</summary>
+<p>A real-time operating system (RTOS) is a special-purpose operating system used in computers that has strict time constraints for any job to be performed and is intended to serve real time applications that possess data as it comes in , typically without buffer delays.</p>
+<p>Types of RTOS:</p>
+<ul>
+<li>Hard RTOS</li>
+<li>Firm RTOS</li>
+<li>Soft RTOS</li>
+</ul>
+</details><details>
+<summary>Difference between main memory and secondary memory.&nbsp;</summary>
+</details><details>
+<summary>Dynamic Binding&nbsp;</summary>
+<p>Static binding happens when the code is compiled, while dynamic bind happens when the code is executed at run time.</p>
+<p><b>Static Binding:</b><br>When a compiler acknowledges all the information required to call a function or all the values of the variables during compile time, it is called “static binding”. As all the required information is known before runtime, it increases the program efficiency and it also enhances the speed of execution of a program. Static Binding makes a program very efficient, but it declines the program flexibility, as ‘values of variable’ and ‘function calling’ are predefined in the program. Static binding is implemented in a program at the time of coding. Overloading a function or an operator is the example of compile time polymorphism i.e. static binding.</p>
+<p><b>Dynamic Binding</b> Calling a function or assigning a value to a variable, at run-time is called “Dynamic Binding”. Dynamic binding can be associated with run time ‘polymorphism’ and ‘inheritance’ in OOP. Dynamic binding makes the execution of a program flexible as it can decide what value should be assigned to the variable and which function should be called, at the time of program execution. But as this information is provided at run time it makes the execution slower as compared to static binding.</p>
+</details><details>
+<summary>FCFS Scheduling&nbsp;</summary>
+</details><details>
+<summary>SJF Scheduling&nbsp;</summary>
+</details><details>
+<summary>SRTF Scheduling&nbsp;</summary>
+<p>SRTF Scheduling is a preemptive version of SJF scheduling. In SRTF, the execution of the process can be stopped after a certain amount of time. At the arrival of every process, the short term scheduler schedules the process with the least remaining burst time among the list of available processes and the running process.</p>
+</details><details>
+<summary>LRTF Scheduling&nbsp;</summary>
+<p>This is a preemptive version of Longest Job First (LJF) scheduling algorithm. In this scheduling algorithm, we find the process with the maximum remaining time and then process it. We check for the maximum remaining time after some interval of time(say 1 unit each) to check if another process having more Burst Time arrived up to that time.</p>
+</details><details>
+<summary>Priority Scheduling&nbsp;</summary>
+<p>Priority Scheduling is a method of scheduling processes that is based on priority. In this algorithm, the scheduler selects the tasks to work as per the priority.</p>
+<p>The processes with higher priority should be carried out first, whereas jobs with equal priorities are carried out on a round-robin or FCFS basis. Priority depends upon memory requirements, time requirements, etc.</p>
+</details><details>
+<summary>Round Robin Scheduling&nbsp;</summary>
+<p>In Round-robin scheduling, each ready task runs turn by turn only in a cyclic queue for a limited time slice. This algorithm also offers starvation free execution of processes. Widely used preemptive scheduling method in traditional OS. All the jobs get a fair allocation of CPU. Cons include : Finding a correct time quantum is a quite difficult task in this system, Round-robin scheduling doesn’t give special priority to more important tasks.</p>
+</details><details>
+<summary>Producer Consumer Problem&nbsp;</summary>
+<p>About Producer-Consumer problem: The Producer-Consumer problem is a classic problem that is used for multi-process synchronisation i.e. synchronisation between more than one processes.</p>
+<p>The job of the Producer is to generate the data, put it into the buffer, and again start generating data. While the job of the Consumer is to consume the data from the buffer.</p>
+<p>What’s the problem here?<br>The following are the problems that might occur in the Producer-Consumer:</p>
+<p>The producer should produce data only when the buffer is not full. If the buffer is full, then the producer shouldn’t be allowed to put any data into the buffer.<br>The consumer should consume data only when the buffer is not empty. If the buffer is empty, then the consumer shouldn’t be allowed to take any data from the buffer.<br>The producer and consumer should not access the buffer at the same time.</p>
+<p>We can solve this problem by using semaphores.</p>
+</details><details>
+<summary>Banker’s Algorithm&nbsp;</summary>
+<p>It is a banker algorithm used to avoid deadlock and allocate resources safely to each process in the computer system. The ‘S-State’ examines all possible tests or activities before deciding whether the allocation should be allowed to each process. It also helps the operating system to successfully share the resources between all the processes. The banker’s algorithm is named because it checks whether a person should be sanctioned a loan amount or not to help the bank system safely simulate allocation resources.</p>
+</details><details>
+<summary>Explain Cache</summary>
+<p>Cache memory is an extremely fast memory type that acts as a buffer between RAM and the CPU. It holds frequently requested data and instructions so that they are immediately available to the CPU when needed.</p>
+</details><details>
+<summary>Diff between direct mapping and associative mapping&nbsp;</summary>
+</details><details>
+<summary>Diff between multitasking and multiprocessing&nbsp;</summary>
+</details>
+<h3><strong>Database Management System</strong>:&nbsp;</h3>
+<details>
+<summary>What is DBMS ? Mention advantages..&nbsp;</summary>
+<p>Database Management System (DBMS) is a software for storing and retrieving users’ data while considering appropriate security measures. It consists of a group of programs which manipulate the database. The DBMS accepts the request for data from an application and instructs the operating system to provide the specific data. In large systems, a DBMS helps users and other third-party software to store and retrieve data.</p>
+<p><b>Advantages:</b></p>
+<ul>
+<li>Improved data sharing</li>
+<li>Improved data security</li>
+<li>Better data integration</li>
+<li>Minimised data inconsistency</li>
+<li>Improved data access</li>
+<li>Improved decision making</li>
+<li>Improved end-user productivity</li>
+</ul>
+</details>
+<details>
+<summary>What is Database?&nbsp;</summary>
+<p>A database is an organised collection of structured information, or data, typically stored electronically in a computer system. A database is usually controlled by a database management system (DBMS). Together, the data and the DBMS, along with the applications that are associated with them, are referred to as a database system, often shortened to just a database.
+</p>
+</details>
+<details>
+<summary>What is a database system?&nbsp;</summary>
+</details>
+<details>
+<summary>What is RDBMS ? Properties..&nbsp;</summary>
+<p>A Relational Database Management system (RDBMS) is a database management system that is based on the relational model. It has the following major components: Table, Record/Tuple/Row, Field, and Column/Attribute. Examples of the most popular RDBMS are MYSQL, Oracle, IBM DB2, and Microsoft SQL Server database.</p>
+<p>Relational databases have the following properties:</p>
+<ul>
+<li>Values are atomic.</li>
+<li>All of the values in a column have the same data type.</li>
+<li>Each row is unique.</li>
+<li>The sequence of columns is insignificant.</li>
+<li>The sequence of rows is insignificant.</li>
+<li>Each column has a unique name.</li>
+<li>Integrity constraints maintain data consistency across multiple tables.</li>
+</ul>
+</details>
+<details>
+<summary>Types of database languages&nbsp;</summary>
+<ul>
+<li><b>Data Definition Language</b>: DDL stands for Data Definition Language. It is used to define database structure or pattern.
+</li>
+<li>
+<b>Data Manipulation Language</b>: DML stands for Data Manipulation Language. It is used for accessing and manipulating data in a database. It handles user requests.
+</li>
+<li><b>Data Control Language</b>: DCL stands for Data Control Language. It is used to retrieve the stored or saved data.
+</li>
+<li>
+<b>Transaction Control Language</b>: TCL is used to run the changes made by the DML statement. TCL can be grouped into a logical transaction.
+</li>
+</ul>
+</details>
+<details>
+<summary>ACID properties (VVVVV IMP)&nbsp;</summary>
+<p>To ensure the consistency of the database, certain properties are followed by all the<br>
+transactions occurring in the system. <br>
+These properties are called ACID Properties of a transaction.</p>
+<ul>
+<li>Atomicity</li>
+<li>Consistency</li>
+<li>Isolation</li>
+<li>Durability</li>
+</ul>
+</details>
+<details>
+<summary>Difference between vertical and horizontal scaling&nbsp;</summary>
+<p>Scaling alters the size of a system. In the scaling process, we either compress or expand the system to meet the expected needs. The scaling operation can be achieved by adding resources to meet the smaller expectation in the current system, or by adding a new system in the existing one, or both.</p>
+<p>Vertical scaling keeps your existing infrastructure but adds computing power. Your existing pool of code does not need to change — you simply need to run the same code on machines with better specs. By scaling up, you increase the capacity of a single machine and increase its throughput. Vertical scaling allows data to live on a single node, and scaling spreads the load through CPU and RAM resources for your machines.</p>
+<p>Horizontal scaling simply adds more instances of machines without first implementing improvements to existing specifications. By scaling out, you share the processing power and load balancing across multiple machines.
+</p>
+</details>
+<details>
+<summary>What is sharding&nbsp;</summary>
+<p>Sharding is a method of splitting and storing a single logical dataset in multiple databases. By distributing the data among multiple machines, a cluster of database systems can store larger dataset and handle additional requests. Sharding is necessary if a dataset is too large to be stored in a single database. Moreover, many sharding strategies allow additional machines to be added. Sharding allows a database cluster to scale along with its data and traffic growth.
+</p>
+</details>
+<details>
+<summary>Keys in DBMS&nbsp;</summary>
+<p>A key is a set of attributes that can identify each tuple uniquely in the given relation.</p>
+<p>Types of Keys:</p>
+<ul>
+<li><b>Super Key</b> – A superkey is a set of attributes that can identify each tuple uniquely in the given relation. A super key may consist of any number of attributes.
+</li>
+<li><b>Candidate Key</b> – A set of minimal attribute(s) that can identify each tuple uniquely in the given relation is called a candidate key.</li>
+<li><b>Primary Key</b> – A primary key is a candidate key that the database designer selects while designing the database. Primary Keys are unique and NOT NULL.</li>
+<li> <b>Alternate Key</b> – Candidate keys that are left unimplemented or unused after implementing the primary key are called alternate keys.</li>
+<li><b>Foreign Key</b> – An attribute ‘X’ is called as a foreign key to some other attribute ‘Y’ when its values are dependent on the values of attribute ‘Y’. The relation in which attribute ‘Y’ is present is called the referenced relation. The relation in which attribute ‘X’ is present is called the referencing relation.
+</li>
+<li><b>Composite Key</b> – A primary key composed of multiple attributes and not just a single attribute is called a composite key.</li>
+<li><b>Unique Key</b> – It is unique for all the records of the table. Once assigned, its value cannot be changed i.e. it is non-updatable. It may have a NULL value.</li>
+</ul>
+</details>
+<details>
+<summary>Types of relationship&nbsp;</summary>
+<p>A relationship is defined as an association among several entities.</p>
+<ul>
+<li>Unary Relationship Set – Unary relationship set is a relationship set where only one entity set participates in a relationship set.</li>
+<li>Binary Relationship Set – Binary relationship set is a relationship set where two entity sets participate in a relationship set.</li>
+<li>Ternary Relationship Set – Ternary relationship set is a relationship set where three entity sets participate in a relationship set.</li>
+<li>N-ary Relationship Set – N-ary relationship set is a relationship set where ‘n’ entity sets participate in a relationship set.</li>
+</ul>
+</details>
+<details>
+<summary>Data abstraction in DBMS, three levels of it&nbsp;</summary>
+<p>Data Abstraction is a process of hiding unwanted or irrelevant details from the end user. It provides a different view and helps in achieving data independence which is used to enhance the security of data.</p>
+<p>Database systems include complex data-structures. In terms of retrieval of data, reduce complexity in terms of usability of users and in order to make the system efficient, developers use levels of abstraction that hide irrelevant details from the users. Levels of abstraction simplify database design.
+</p>
+</details>
+<details>
+<summary>Indexing in DBMS&nbsp;</summary>
+<p>Indexing is a way to optimise the performance of a database by minimising the number of disk accesses required when a query is processed. It is a data structure technique which is used to quickly locate and access the data in a database.
+</p>
+</details>
+<details>
+<summary>What is DDL (Data Definition Language)&nbsp;</summary>
+<p>DDL stands for Data Definition Language. It is used to define database structure or pattern.<br>
+It is used to create schema, tables, indexes, constraints, etc. in the database.<br>
+Using the DDL statements, you can create the skeleton of the database.<br>
+Data definition language is used to store the information of metadata like the number of tables and schemas, their names, indexes, columns in each table, constraints, etc.
+</p>
+</details>
+<details>
+<summary>What is DML (Data Manipulation Language)</summary>
+<p>DML stands for Data Manipulation Language. It is used for accessing and manipulating data in a database. It handles user requests.
+</p>
+</details>
+<details>
+<summary>What is normalization ? Types of normalization.</summary>
+<ul>
+<li>Normalization is the process of organizing data by disintegrating bigger table into smaller one’s<br>
+with proper dependencies</li>
+<li>Redundant Data wastes a lot of disk space and creates maintenance problems (Update, Insert and Delete Anomaly). Hence the DB tables should be Normalized.</li>
+<li>The process of Normalization is achieved by following some rules which are defined as Normal Forms</li>
+<li>There are basically 3 types of Normal Form – 1NF, 2NF, 3NF. Strictness increases as we go from 1NF to 3NF.</li>
+<li>Apart from the above mentioned Normal Form there exist one more Form called Boyce Codd Normal Form (BCNF) . This is an advanced version of 3NF and is even stricter than 3NF.</li>
+</ul>
+<p><a href="https://takeuforward.org/dbms/normalization-in-dbms-what-is-normalization/">Read normalisation in details</a>
+</p>
+</details>
+<details>
+<summary>What is denormalization ?&nbsp;</summary>
+<p>Denormalization is a database optimization technique in which we add redundant data to one or more tables. This can help us avoid costly joins in a relational database. Note that denormalization does not mean not doing normalisation. It is an optimization technique that is applied after doing normalisation.
+</p>
+</details>
+<details>
+<summary>What is functional dependency ?&nbsp;</summary>
+<p>A functional dependency is a constraint that specifies the relationship between two sets of attributes where one set can accurately determine the value of other sets. It is denoted as X → Y, where X is a set of attributes that is capable of determining the value of Y. The attribute set on the left side of the arrow, X is called Determinant, while on the right side, Y is called the Dependent.
+</p>
+</details>
+<details>
+<summary>E-R Model ?&nbsp;</summary>
+<p>ER model stands for an Entity-Relationship model. It is a high-level data model. This model is used to define the data elements and relationship for a specified system.</p>
+<p>It develops a conceptual design for the database. It also develops a very simple and easy to design view of data.<br>
+In ER modelling, the database structure is portrayed as a diagram called an entity-relationship diagram.
+</p>
+</details>
+<details>
+<summary>&nbsp;Conflict Serializability in DBMS ..&nbsp;</summary>
+<p>Serializability is a concept that helps us to check which schedules are serializable. A serializable schedule is the one that always leaves the database in consistent state.</p>
+<p>A schedule is called conflict serializability if after swapping of non-conflicting operations, it can transform into a serial schedule. The schedule will be a conflict serializable if it is conflict equivalent to a serial schedule.
+</p>
+</details>
+<details>
+<summary>What is CCP ? (Concurrency Control Protocols)&nbsp;</summary>
+<p>Concurrency Control is the management procedure that is required for controlling concurrent execution of the operations that take place on a database.</p>
+<p>The concurrency control protocols ensure the atomicity, consistency, isolation, durability and serializability of the concurrent execution of the database transactions.</p>
+<p>Therefore, these protocols are categorised as:</p>
+<ul>
+<li>Lock Based Concurrency Control Protocol</li>
+<li>Timestamp Concurrency Control Protocol</li>
+<li>Validation Based Concurrency Control Protocol</li>
+</ul>
+</details>
+<details>
+<summary>Entity, Entity Type, Entity Set, Weak Entity Set..&nbsp;</summary>
+<p>Entity in DBMS can be a real-world object with an existence, For example, in a College database, the entities can be Professor, Students, Courses, etc.</p>
+<p>The entity type is a collection of the entity having similar attributes.</p>
+<p>Types of Entity type:</p>
+<ul>
+<li><b>Strong Entity Type</b>:Strong entities are those entity types which have a key attribute. The primary key helps in identifying each entity uniquely. It is represented by a rectangle.
+</li>
+<li><b>Weak Entity Type</b>: Weak entity type doesn’t have a key attribute. Weak entity types can’t be identified on their own. It depends upon some other strong entity for its distinct identity.
+</li>
+<li><b>Entity Set: </b>Entity Set is a collection of entities of the same entity type. We can say that entity type is a superset of the entity set as all the entities are included in the entity type.
+</li>
+</ul>
+</details>
+<details>
+<summary>What are SQL commands ? Types of them..&nbsp;</summary>
+<p><a href="https://www.javatpoint.com/dbms-sql-command" target="_blank" rel="noopener">https://www.javatpoint.com/dbms-sql-command</a>
+</p>
+</details>
+<details>
+<summary>Nested Queries in SQL ?&nbsp;</summary>
+<p><a href="https://www.tutorialspoint.com/explain-about-nested-queries-in-dbms" target="_blank" rel="noopener">https://www.tutorialspoint.com/explain-about-nested-queries-in-dbms</a>
+</p>
+</details>
+<details>
+<summary>What is JOIN .. Explain types of JOINs&nbsp;</summary>
+<p><a href="https://www.javatpoint.com/dbms-sql-joins" target="_blank" rel="noopener">https://www.javatpoint.com/dbms-sql-joins</a>
+</p>
+</details>
+<details>
+<summary>Inner and Outer Join&nbsp;</summary>
+<p>Here are the different types of the JOINs in SQL:</p>
+<ul>
+<li><b>(INNER) JOIN: </b> Returns records that have matching values in both tables</li>
+<li><b>LEFT (OUTER) JOIN: </b>Returns all records from the left table, and the matched records from the right table</li>
+<li><b>RIGHT (OUTER) JOIN: </b>Returns all records from the right table, and the matched records from the left table</li>
+<li><b>FULL (OUTER) JOIN:</b> Returns all records when there is a match in either left or right table
+</li>
+</ul>
+</details>
+<details>
+<summary>Diff between 2 tier and 3 tier architecture&nbsp;</summary>
+<p><a href="https://www.geeksforgeeks.org/difference-between-two-tier-and-three-tier-database-architecture/" target="_blank" rel="noopener">https://www.geeksforgeeks.org/difference-between-two-tier-and-three-tier-database-architecture/</a>
+</p>
+</details>
+<details>
+<summary>Diff between TRUNCATE and DELETE command ..&nbsp;</summary>
+</details>
+<details>
+<summary>Difference between Intension and Extension in a DataBase</summary>
+</details>
+<details>
+<summary>Difference between share lock and exclusive lock, definition of lock&nbsp;</summary>
+</details>
+<ins class="adsbygoogle" style="display:block" data-ad-client="ca-pub-4354768384472857" data-ad-slot="4110474129" data-ad-format="auto" data-full-width-responsive="true"></ins>
+<script>(adsbygoogle=window.adsbygoogle||[]).push({})</script>
+<p></p>
+<h3>Computer Networks</h3>
+<p>
+</p><details>
+<summary>Define network&nbsp;</summary>
+<p>A network is a set of devices that are connected with a physical media link. In<br>
+a network, two or more nodes are connected by a physical link or two or more networks are connected by one or more nodes. A network is a collection of devices connected to each other to allow the sharing of data.
+</p>
+</details>
+<details>
+<summary>What do you mean by network topology, and explain types of them&nbsp;</summary>
+<ul>
+<li>Network topology is the arrangement of nodes and links of a network.</li>
+<li>Topologies are categorized as either physical network topology or logical network topology.</li>
+<li>The topology of a network is key to determining its performance.</li>
+<li>Network topology can be categorized into – Bus Topology, Ring Topology, Star Topology, Mesh Topology, Tree Topology.</li>
+</ul>
+<p><a href="https://takeuforward.org/computer-network/what-is-network-and-network-topology/" target="_blank" rel="noopener">Read this article for more details.</a>
+</p>
+</details>
+<details>
+<summary>Define bandwidth, node and link ?&nbsp;</summary>
+<p>Bandwidth is the data transfer capacity of a computer network in bits per second (Bps). The term may also be used colloquially to indicate a person’s capacity for tasks or deep thoughts at a point in time.</p>
+<p>A network is a connection setup of two or more computers directly connected by some physical mediums like optical fibre or coaxial cable. This physical medium of connection is known as a link, and the computers that it is connected to are known as nodes
+</p>
+</details>
+<details>
+<summary>Explain TCP model ..&nbsp;</summary>
+<p>It is a compressed version of the OSI model with only 4 layers. It was developed by the US Department of Defence (DoD) in the 1860s. The name of this model is based on 2 standard protocols used i.e. TCP (Transmission Control Protocol) and IP (Internet Protocol).</p>
+<p>1. Network Access/Link layer : Decides which links such as serial lines or classic Ethernet must be used<br>
+to meet the needs of the connectionless internet layer. Ex – Sonet, Ethernet<br>
+2. Internet : The internet layer is the most important layer which holds the whole<br>
+architecture together. It delivers the IP packets where they are supposed to be<br>
+delivered. Ex – IP, ICMP.<br>
+3. Transport : Its functionality is almost the same as the OSI transport layer. It<br>
+enables peer entities on the network to carry on a conversation. Ex – TCP, UDP<br>
+(User Datagram Protocol)<br>
+4. Application : It contains all the higher-level protocols. Ex – HTTP, SMTP, RTP,<br>
+DNS
+</p>
+</details>
+<details>
+<summary>Layers of OSI model&nbsp;</summary>
+<p>There are majorly 2 main layers in the OSI model:</p>
+<ul>
+<li> Physical Layer</li>
+<li>Data Link Layer</li>
+</ul>
+<p><a href="https://takeuforward.org/computer-network/layers-of-osi-model/" target="_blank" rel="noopener">Read this article for details</a>
+</p>
+</details>
+<details>
+<summary>Significance of Data Link Layer</summary>
+<ul>
+<li>It is used for transferring the data from one node to another node.</li>
+<li>It receives the data from the network layer and converts the data into data frames and then attaches the physical address to these frames which are sent to the physical layer.</li>
+<li>It enables the error-free transfer of data from one node to another node.</li>
+</ul>
+<p>Functions of Data-link layer:</p>
+<ul>
+<li>Frame synchronisation: Data-link layer converts the data into frames, and it ensures that the destination must recognize the starting and ending of each frame.</li>
+<li>Flow control: Data-link layer controls the data flow within the network.</li>
+<li>Error control: It detects and corrects the error occurred during the transmission from source to destination.</li>
+<li>Addressing: Data-link layers attach the physical address with the data frames so that the individual machines can be easily identified.</li>
+<li>Link management: Data-link layer manages the initiation, maintenance and termination of the link between the source and destination for the effective exchange of data.</li>
+</ul>
+</details>
+<details>
+<summary>Define gateway, difference between gateway and router ..&nbsp;</summary>
+<p>A node that is connected to two or more networks is commonly known as a gateway. It is also known as a router. It is used to forward messages from one network to another. Both the gateway and router regulate the traffic in the network. Differences between gateway and router: A router sends the data between two similar networks while gateway sends the data between two dissimilar networks.
+</p>
+</details>
+<details>
+<summary>What does ping command do ?&nbsp;</summary>
+<p>The “ping” is a utility program that allows you to check the connectivity between the network devices. You can ping devices using its IP address or name.
+</p>
+</details>
+<details>
+<summary>What is DNS, DNS forwarder, NIC, ?&nbsp;</summary>
+<p><b>DNS:</b><br>
+1. DNS is an acronym that stands for Domain Name System.DNS was introduced by Paul Mockapetris and Jon Postel in 1983.<br>
+2. It is a naming system for all the resources over the internet which includes physical nodes and applications. It is used to locate resources easily over a network.<br>
+3. DNS is an internet which maps the domain names to their associated IP addresses.<br>
+4. Without DNS, users must know the IP address of the web page that you wanted to access.</p>
+<p><b>DNS Forwarder :</b> A forwarder is used with a DNS server when it receives DNS queries that cannot be resolved quickly. So it forwards those requests to external DNS servers for resolution. A DNS server which is configured as a forwarder will behave differently than the DNS server which is not configured as a forwarder. NIC stands for Network Interface Card. It is a peripheral card attached to the PC to connect to a network. Every NIC has its own MAC address that identifies the PC on the network. It provides a wireless connection to a local area network. NICs were mainly used in desktop computers.
+</p>
+</details>
+<details>
+<summary>What is MAC address ?&nbsp;</summary>
+<p>A media access control address (MAC address) is a unique identifier assigned to a network interface controller (NIC) for use as a network address in communications within a network segment.
+</p>
+</details>
+<details>
+<summary>What is IP address, private IP address, public IP address, APIPA ?&nbsp;</summary>
+<p>An IP address is a unique address that identifies a device on the internet or a local network. IP stands for “Internet Protocol,” which is the set of rules governing the format of data sent via the internet or local network.</p>
+<p><b>Private IP Address</b> – There are three ranges of IP addresses that have been reserved<br>
+for IP addresses. They are not valid for use on the internet. If you want to access the<br>
+internet on these private IPs, you must use a proxy server or NAT server.</p>
+<p><b>Public IP Address</b> – A public IP address is an address taken by the Internet Service<br>
+Provider which facilitates communication on the internet.</p>
+<p><b>APIPA stands for Automatic Private IP Addressing (APIPA)</b>. It is a feature or characteristic in operating systems (eg. Windows) which enables computers to self-configure an IP address and subnet mask automatically when their DHCP(Dynamic Host Configuration Protocol:A DHCP Server is a network server that automatically provides and assigns IP addresses, default gateways and other network parameters to client devices. It relies on the standard protocol known as Dynamic Host Configuration Protocol) server isn’t reachable</p>
+</details>
+<details>
+<summary>Difference between IPv4 and IPv6</summary>
+</details>
+<details>
+<summary>What is subnet ?&nbsp;</summary>
+<p>A subnet is a network inside a network achieved by the process called subnetting which helps divide a network into subnets. It is used for getting a higher routing efficiency and enhances the security of the network. It reduces the time to extract the host address from the routing table.
+</p>
+</details>
+<details>
+<summary>Firewalls&nbsp;</summary>
+<p>The firewall is a network security system that is used to monitor the incoming<br>
+and outgoing traffic and blocks the same based on the firewall security policies. It acts as a wall between the internet (public network) and the networking devices (a private network). It is either a hardware device, software program, or a combination of both. It adds a layer of security to the network.
+</p>
+</details>
+<details>
+<summary>Different type of delays&nbsp;</summary>
+<p>The delays, here, means the time for which the processing of a particular packet takes place.</p>
+<p>We have the following types of delays in computer networks:</p>
+<ul>
+<li>Transmission Delay</li>
+<li>Propagation delay</li>
+<li>Queueing delay</li>
+<li>Processing delay</li>
+</ul>
+</details>
+<details>
+<summary>3 way handshaking&nbsp;</summary>
+<p>Three-Way HandShake or a TCP 3-way handshake is a process which is used in a TCP/IP network to make a connection between the server and client. It is a three-step process that requires both the client and server to exchange synchronisation and acknowledgment packets before the real data communication process starts.</p>
+<p>Three-way handshake process is designed in such a way that both ends help you to initiate, negotiate, and separate TCP socket connections at the same time. It allows you to transfer multiple TCP socket connections in both directions at the same time.
+</p>
+</details>
+<details>
+<summary>Server-side load balancer</summary>
+<p>All backend server instances are registered with a central load balancer. A client requests this load balancer which then routes the request to one of the server instances using various algorithms like round-robin. AWS ELB(Elastic Load Balancing) is a prime example of server-side load-balancing that registers multiple EC2 instances launched in its auto-scaling group and then routes the client requests to one of the EC2 instances.</p>
+<p>Advantages of server-side load balancing:</p>
+<ul>
+<li>Simple client configuration: only need to know the load-balancer address.</li>
+<li>Clients can be untrusted: all traffic goes through the load-balancer where it can be looked at. Clients are not aware of the backend servers.</li>
+</ul>
+</details>
+<details>
+<summary>RSA Algorithm&nbsp;</summary>
+<p>RSA algorithm is an asymmetric cryptography algorithm. Asymmetric actually means that it works on two different keys i.e. Public Key and Private Key. As the name describes, the Public Key is given to everyone and the Private key is kept private.</p>
+<p>An example of asymmetric cryptography : A client (for example browser) sends its public key to the server and requests for some data. The server encrypts the data using the client’s public key and sends the encrypted data. Client receives this data and decrypts it. Since this is asymmetric, nobody else except the browser can decrypt the data even if a third party has the public key of the browser.
+</p>
+</details>
+<details>
+<summary>What is HTTP and HTTPS protocol ?&nbsp;</summary>
+<p>HTTP is the HyperText Transfer Protocol which defines the set of rules and standards on how the information can be transmitted on the World Wide Web (WWW). It helps the web browsers and web servers for communication. It is a ‘stateless protocol’ where each command is independent with respect to the previous command. HTTP is an application layer protocol built upon the TCP. It uses port 80 by default. HTTPS is the HyperText Transfer Protocol Secure or Secure HTTP. It is an advanced and a secured version of HTTP. On top of HTTP, SSL/TLS protocol is used to provide security. It enables secure transactions by encrypting the communication and also helps identify network servers securely. It uses port 443 by default.
+</p>
+</details>
+<details>
+<summary>What is SMTP protocol ?&nbsp;</summary>
+<p>SMTP is the Simple Mail Transfer Protocol. SMTP sets the rule for communication between servers. This set of rules helps the software to transmit emails over the internet. It supports both End-to-End and Store-and-Forward methods. It is in always-listening mode on port 25.
+</p>
+</details>
+<details>
+<summary>TCP and UDP protocol, prepare differences</summary>
+<p>TCP is a connection-oriented protocol, whereas UDP is a connectionless protocol. A key difference between TCP and UDP is speed, as TCP is comparatively slower than UDP. Overall, UDP is a much faster, simpler, and<br>
+efficient protocol, however, retransmission of lost data packets is only possible with TCP.</p>
+<p>TCP provides extensive error checking mechanisms. It is because it provides flow control and acknowledgment of data. UDP has only the basic error checking mechanism using checksums.
+</p>
+</details>
+<details>
+<summary>What happens when you enter “google.com” (very very famous question)&nbsp;</summary>
+<ul>
+<li>Check the browser cache first if the content is fresh and present in the cache display the same.</li>
+<li>If not, the browser checks if the IP of the URL is present in the cache (browser and OS) if not then requests the OS to do a DNS lookup using UDP to get the corresponding IP address of the URL from the DNS server to establish a new TCP connection.</li>
+<li>A new TCP connection is set between the browser and the server using three-way handshaking.</li>
+<li>An HTTP request is sent to the server using the TCP connection.</li>
+<li>The web servers running on the Servers handle the incoming HTTP request and send the HTTP response.</li>
+<li>The browser processes the HTTP response sent by the server and may close the TCP connection or reuse the same for future requests.</li>
+<li>If the response data is cacheable then browsers cache the same.</li>
+<li>Browser decodes the response and renders the content.</li>
+</ul>
+</details>
+<details>
+<summary>Hub vs Switch&nbsp;</summary>
+<p><b>Hub:</b> Hub is a networking device which is used to transmit the signal to each port<br>
+(except one port) to respond from which the signal was received. Hub is operated on a Physical layer. In this packet filtering is not available. It is of two types: Active Hub, Passive Hub.</p>
+<p><b>Switch:</b> Switch is a network device which is used to enable the connection<br>
+establishment and connection termination on the basis of need. Switch is operated on the Data link layer. In this packet filtering is available. It is a type of full duplex<br>
+transmission mode and it is also called an efficient bridge
+</p>
+</details>
+<details>
+<summary>VPN, advantages and disadvantages of it&nbsp;</summary>
+<p>VPN (Virtual Private Network) : VPN or the Virtual Private Network is a private WAN<br>
+(Wide Area Network) built on the internet. It allows the creation of a secured tunnel<br>
+(protected network) between different networks using the internet (public network). By using the VPN, a client can connect to the organisation’s network remotely.</p>
+<p>Advantages of VPN :<br>
+1. VPN is used to connect offices in different geographical locations remotely and is<br>
+cheaper when compared to WAN connections.<br>
+2. VPN is used for secure transactions and confidential data transfer between<br>
+multiple offices located in different geographical locations.<br>
+3. VPN keeps an organisation’s information secured against any potential threats or<br>
+intrusions by using virtualization.<br>
+4. VPN encrypts the internet traffic and disguises the online identity</p>
+<p>Disadvantages of VPN :<br>
+1. Not designed for continuous use<br>
+2. Complexity prevents scalability<br>
+3. Lack of granular security<br>
+4. Unpredictable performance<br>
+5. Unreliable availability
+</p>
+</details>
+<details>
+<summary>LAN</summary>
+<p>A local area network (LAN) is a collection of devices connected together in one physical location, such as a building, office, or home. A LAN can be small or large, ranging from a home network with one user to an enterprise network with thousands of users and devices in an office or school.
+</p>
+</details>
+</div>
+<footer class="entry-footer">
+<nav class="navigation post-navigation" role="navigation" aria-label="Posts">
+<h2 class="screen-reader-text">Post navigation</h2>
+<div class="nav-links"><div class="nav-previous"><a href="https://takeuforward.org/data-structure/strivers-tree-series-tree-data-structure/" rel="prev"><span class="nav-link-text">Previous Post</span><h3 class="entry-title">Striver’s Tree Series : Tree Data Structure</h3></a></div><div class="nav-next"><a href="https://takeuforward.org/interview-experience/strivers-cp-sheet/" rel="next"><span class="nav-link-text">Next Post</span><h3 class="entry-title">Striver’s CP Sheet</h3></a></div></div>
+</nav>
+</footer>
+</article>
+<script>function load_disqus(disqus_shortname){var is_disqus_empty=jQuery('disqus_empty'),disqus_target=jQuery('disqus_thread'),disqus_hook=(jQuery('head')[0]||jQuery('body')[0]);if(disqus_target&&is_disqus_empty){jQuery.ajaxSetup({cache:!0});jQuery.getScript('//'+disqus_shortname+'.disqus.com/embed.js');jQuery.ajaxSetup({cache:!1});is_disqus_empty.remove();jQuery("#diqus_loader").hide()}}</script>
+<div id="disqus_thread"></div>
+<button id="diqus_loader" onclick="load_disqus(&#39;takeuforward&#39;)"> Load Comments</button>
+</main>
+</section>
+<section id="secondary" class="sidebar widget-area clearfix" role="complementary">
+<aside id="email-subscribers-form-2" class="widget widget_email-subscribers-form clearfix"><div class="widget-header"><h3 class="widget-title"> Subscribe </h3></div><div class="emaillist" id="es_form_f2-n1"><form action="https://takeuforward.org/interviews/must-do-questions-for-dbms-cn-os-interviews-sde-core-sheet/#es_form_f2-n1" method="post" class="es_subscription_form es_shortcode_form " id="es_subscription_form_625511c7d91c6" data-source="ig-es"><div class="es_caption">I want to receive latest posts and interview tips</div><div class="es-field-wrap"><label>Name*<br><input type="text" name="esfpx_name" class="ig_es_form_field_name" placeholder="John" value="" required="required"></label></div><div class="es-field-wrap"><label>Email*<br><input class="es_required_field es_txt_email ig_es_form_field_email" type="email" name="esfpx_email" value="" placeholder="abc@gmail.com" required="required"></label></div><input type="hidden" name="esfpx_lists[]" value="cfac6e56919b"><input type="hidden" name="esfpx_form_id" value="2"><input type="hidden" name="es" value="subscribe">
+<input type="hidden" name="esfpx_es_form_identifier" value="f2-n1">
+<input type="hidden" name="esfpx_es_email_page" value="152">
+<input type="hidden" name="esfpx_es_email_page_url" value="https://takeuforward.org/interviews/must-do-questions-for-dbms-cn-os-interviews-sde-core-sheet/">
+<input type="hidden" name="esfpx_status" value="Unconfirmed">
+<input type="hidden" name="esfpx_es-subscribe" id="es-subscribe-625511c7d91c6" value="de9d0132fe">
+<label style="position:absolute;top:-99999px;left:-99999px;z-index:-99;"><input type="email" name="esfpx_es_hp_email" class="es_required_field" tabindex="-1" autocomplete="-1" value=""></label><input type="submit" name="submit" class="es_subscription_form_submit es_submit_button es_textbox_button" id="es_subscription_form_submit_625511c7d91c6" value="Join takeUforward"><span class="es_spinner_image" id="spinner-image"><img alt="Loading" data-src="https://takeuforward.org/wp-content/plugins/email-subscribers/lite/public/images/spinner.gif" class="lazyload" src="data:image/gif;base64,R0lGODlhAQABAAAAACH5BAEKAAEALAAAAAABAAEAAAICTAEAOw=="><noscript><img src="https://takeuforward.org/wp-content/plugins/email-subscribers/lite/public/images/spinner.gif" alt="Loading" /></noscript></span></form><span class="es_subscription_message " id="es_subscription_message_625511c7d91c6"></span></div></aside><aside id="block-2" class="widget widget_block widget_search clearfix"><form role="search" method="get" action="https://takeuforward.org/" class="wp-block-search__button-outside wp-block-search__text-button wp-block-search"><label for="wp-block-search__input-1" class="wp-block-search__label">Search</label><div class="wp-block-search__inside-wrapper"><input type="search" id="wp-block-search__input-1" class="wp-block-search__input" name="s" value="" placeholder="" required=""><button type="submit" class="wp-block-search__button ">Search</button></div></form></aside><aside id="block-3" class="widget widget_block clearfix">
+<div class="wp-block-group"><div class="wp-block-group__inner-container">
+<p><ins class="adsbygoogle" style="display:block" data-ad-client="ca-pub-4354768384472857" data-ad-slot="5625352885" data-ad-format="auto" data-full-width-responsive="true"></ins><script>(adsbygoogle=window.adsbygoogle||[]).push({})</script></p>
+<h2>Recent Posts</h2>
+<ul class="wp-block-latest-posts__list wp-block-latest-posts"><li><a href="https://takeuforward.org/java/for-loop-in-java/">For loop in Java</a></li>
+<li><a href="https://takeuforward.org/data-structure/count-1s-in-sorted-binary-array/">Count 1’s in Sorted binary Array</a></li>
+<li><a href="https://takeuforward.org/data-structure/edit-distance-dp-33/">Edit Distance | (DP-33)</a></li>
+<li><a href="https://takeuforward.org/java/java-for-each-loop/">Java for-each loop</a></li>
+<li><a href="https://takeuforward.org/c/comments-in-c/">Comments in C++</a></li>
+</ul></div></div>
+</aside><aside id="block-14" class="widget widget_block clearfix">
+<div class="wp-block-group"><div class="wp-block-group__inner-container">
+<div class="wp-block-columns are-vertically-aligned-center">
+<div class="wp-block-column is-vertically-aligned-center" style="flex-basis:100%">
+<div class="wp-block-group"><div class="wp-block-group__inner-container"><p class="wp-block-tag-cloud"><a href="https://takeuforward.org/tag/accolite-digital/" class="tag-cloud-link tag-link-30 tag-link-position-1" style="font-size: 8pt;" aria-label="Accolite Digital (1 item)">Accolite Digital</a>
+<a href="https://takeuforward.org/tag/amazon/" class="tag-cloud-link tag-link-10 tag-link-position-2" style="font-size: 15.56976744186pt;" aria-label="Amazon (16 items)">Amazon</a>
+<a href="https://takeuforward.org/tag/arcesium/" class="tag-cloud-link tag-link-33 tag-link-position-3" style="font-size: 8pt;" aria-label="Arcesium (1 item)">Arcesium</a>
+<a href="https://takeuforward.org/tag/bank-of-america/" class="tag-cloud-link tag-link-28 tag-link-position-4" style="font-size: 8pt;" aria-label="Bank of America (1 item)">Bank of America</a>
+<a href="https://takeuforward.org/tag/barclays/" class="tag-cloud-link tag-link-17 tag-link-position-5" style="font-size: 8pt;" aria-label="Barclays (1 item)">Barclays</a>
+<a href="https://takeuforward.org/tag/bfs/" class="tag-cloud-link tag-link-80 tag-link-position-6" style="font-size: 9.4651162790698pt;" aria-label="BFS (2 items)">BFS</a>
+<a href="https://takeuforward.org/tag/binary-search/" class="tag-cloud-link tag-link-19 tag-link-position-7" style="font-size: 12.883720930233pt;" aria-label="Binary Search (7 items)">Binary Search</a>
+<a href="https://takeuforward.org/tag/binary-search-tree/" class="tag-cloud-link tag-link-61 tag-link-position-8" style="font-size: 9.4651162790698pt;" aria-label="Binary Search Tree (2 items)">Binary Search Tree</a>
+<a href="https://takeuforward.org/tag/commvault/" class="tag-cloud-link tag-link-8 tag-link-position-9" style="font-size: 8pt;" aria-label="Commvault (1 item)">Commvault</a>
+<a href="https://takeuforward.org/tag/cpp/" class="tag-cloud-link tag-link-112 tag-link-position-10" style="font-size: 9.4651162790698pt;" aria-label="CPP (2 items)">CPP</a>
+<a href="https://takeuforward.org/tag/de-shaw/" class="tag-cloud-link tag-link-29 tag-link-position-11" style="font-size: 8pt;" aria-label="DE Shaw (1 item)">DE Shaw</a>
+<a href="https://takeuforward.org/tag/dfs/" class="tag-cloud-link tag-link-55 tag-link-position-12" style="font-size: 9.4651162790698pt;" aria-label="DFS (2 items)">DFS</a>
+<a href="https://takeuforward.org/tag/dsa-self-paced/" class="tag-cloud-link tag-link-136 tag-link-position-13" style="font-size: 22pt;" aria-label="DSA Self Paced (104 items)">DSA Self Paced</a>
+<a href="https://takeuforward.org/tag/google/" class="tag-cloud-link tag-link-49 tag-link-position-14" style="font-size: 8pt;" aria-label="google (1 item)">google</a>
+<a href="https://takeuforward.org/tag/hackerearth/" class="tag-cloud-link tag-link-51 tag-link-position-15" style="font-size: 8pt;" aria-label="HackerEarth (1 item)">HackerEarth</a>
+<a href="https://takeuforward.org/tag/infosys/" class="tag-cloud-link tag-link-52 tag-link-position-16" style="font-size: 9.4651162790698pt;" aria-label="infosys (2 items)">infosys</a>
+<a href="https://takeuforward.org/tag/inorder/" class="tag-cloud-link tag-link-54 tag-link-position-17" style="font-size: 8pt;" aria-label="inorder (1 item)">inorder</a>
+<a href="https://takeuforward.org/tag/java/" class="tag-cloud-link tag-link-113 tag-link-position-18" style="font-size: 9.4651162790698pt;" aria-label="Java (2 items)">Java</a>
+<a href="https://takeuforward.org/tag/juspay/" class="tag-cloud-link tag-link-21 tag-link-position-19" style="font-size: 8pt;" aria-label="Juspay (1 item)">Juspay</a>
+<a href="https://takeuforward.org/tag/kreeti-technologies/" class="tag-cloud-link tag-link-12 tag-link-position-20" style="font-size: 8pt;" aria-label="Kreeti Technologies (1 item)">Kreeti Technologies</a>
+<a href="https://takeuforward.org/tag/morgan-stanley/" class="tag-cloud-link tag-link-20 tag-link-position-21" style="font-size: 8pt;" aria-label="Morgan Stanley (1 item)">Morgan Stanley</a>
+<a href="https://takeuforward.org/tag/newfold-digital/" class="tag-cloud-link tag-link-13 tag-link-position-22" style="font-size: 8pt;" aria-label="Newfold Digital (1 item)">Newfold Digital</a>
+<a href="https://takeuforward.org/tag/oracle/" class="tag-cloud-link tag-link-9 tag-link-position-23" style="font-size: 8pt;" aria-label="Oracle (1 item)">Oracle</a>
+<a href="https://takeuforward.org/tag/post-order/" class="tag-cloud-link tag-link-24 tag-link-position-24" style="font-size: 8pt;" aria-label="post order (1 item)">post order</a>
+<a href="https://takeuforward.org/tag/pre-order/" class="tag-cloud-link tag-link-67 tag-link-position-25" style="font-size: 8pt;" aria-label="pre-order (1 item)">pre-order</a>
+<a href="https://takeuforward.org/tag/queue/" class="tag-cloud-link tag-link-62 tag-link-position-26" style="font-size: 8pt;" aria-label="queue (1 item)">queue</a>
+<a href="https://takeuforward.org/tag/recursion/" class="tag-cloud-link tag-link-25 tag-link-position-27" style="font-size: 8pt;" aria-label="recursion (1 item)">recursion</a>
+<a href="https://takeuforward.org/tag/samsung/" class="tag-cloud-link tag-link-35 tag-link-position-28" style="font-size: 9.4651162790698pt;" aria-label="Samsung (2 items)">Samsung</a>
+<a href="https://takeuforward.org/tag/sde-core-sheet/" class="tag-cloud-link tag-link-142 tag-link-position-29" style="font-size: 9.4651162790698pt;" aria-label="SDE Core Sheet (2 items)">SDE Core Sheet</a>
+<a href="https://takeuforward.org/tag/sde-sheet/" class="tag-cloud-link tag-link-116 tag-link-position-30" style="font-size: 17.93023255814pt;" aria-label="SDE Sheet (32 items)">SDE Sheet</a>
+<a href="https://takeuforward.org/tag/searching/" class="tag-cloud-link tag-link-39 tag-link-position-31" style="font-size: 8pt;" aria-label="Searching (1 item)">Searching</a>
+<a href="https://takeuforward.org/tag/set-bits/" class="tag-cloud-link tag-link-31 tag-link-position-32" style="font-size: 8pt;" aria-label="set-bits (1 item)">set-bits</a>
+<a href="https://takeuforward.org/tag/sorting/" class="tag-cloud-link tag-link-26 tag-link-position-33" style="font-size: 11.255813953488pt;" aria-label="sorting (4 items)">sorting</a>
+<a href="https://takeuforward.org/tag/sub-array/" class="tag-cloud-link tag-link-56 tag-link-position-34" style="font-size: 8pt;" aria-label="sub-array (1 item)">sub-array</a>
+<a href="https://takeuforward.org/tag/subarray/" class="tag-cloud-link tag-link-22 tag-link-position-35" style="font-size: 8pt;" aria-label="subarray (1 item)">subarray</a>
+<a href="https://takeuforward.org/tag/swiggy/" class="tag-cloud-link tag-link-34 tag-link-position-36" style="font-size: 8pt;" aria-label="Swiggy (1 item)">Swiggy</a>
+<a href="https://takeuforward.org/tag/takeuforward/" class="tag-cloud-link tag-link-32 tag-link-position-37" style="font-size: 8pt;" aria-label="takeuforward (1 item)">takeuforward</a>
+<a href="https://takeuforward.org/tag/tcq-ninja/" class="tag-cloud-link tag-link-64 tag-link-position-38" style="font-size: 8pt;" aria-label="TCQ NINJA (1 item)">TCQ NINJA</a>
+<a href="https://takeuforward.org/tag/tcs/" class="tag-cloud-link tag-link-58 tag-link-position-39" style="font-size: 9.4651162790698pt;" aria-label="TCS (2 items)">TCS</a>
+<a href="https://takeuforward.org/tag/tcs-codevita/" class="tag-cloud-link tag-link-63 tag-link-position-40" style="font-size: 9.4651162790698pt;" aria-label="TCS CODEVITA (2 items)">TCS CODEVITA</a>
+<a href="https://takeuforward.org/tag/tcs-digita/" class="tag-cloud-link tag-link-65 tag-link-position-41" style="font-size: 8pt;" aria-label="TCS DIGITA; (1 item)">TCS DIGITA;</a>
+<a href="https://takeuforward.org/tag/tcs-ninja/" class="tag-cloud-link tag-link-60 tag-link-position-42" style="font-size: 8pt;" aria-label="TCS Ninja (1 item)">TCS Ninja</a>
+<a href="https://takeuforward.org/tag/tcs-nqt/" class="tag-cloud-link tag-link-59 tag-link-position-43" style="font-size: 20.453488372093pt;" aria-label="TCS NQT (66 items)">TCS NQT</a>
+<a href="https://takeuforward.org/tag/vmware/" class="tag-cloud-link tag-link-11 tag-link-position-44" style="font-size: 9.4651162790698pt;" aria-label="VMware (2 items)">VMware</a>
+<a href="https://takeuforward.org/tag/xor/" class="tag-cloud-link tag-link-57 tag-link-position-45" style="font-size: 9.4651162790698pt;" aria-label="XOR (2 items)">XOR</a></p></div></div>
+</div>
+</div>
+</div></div>
+</aside><aside id="block-13" class="widget widget_block clearfix"><p><ins class="adsbygoogle" style="display: block;" data-ad-client="ca-pub-4354768384472857" data-ad-slot="5625352885" data-ad-format="auto" data-full-width-responsive="true"></ins><script>(adsbygoogle=window.adsbygoogle||[]).push({})</script></p></aside><aside id="block-4" class="widget widget_block clearfix">
+<div class="wp-block-group"><div class="wp-block-group__inner-container"></div></div>
+</aside>
+</section>
+</div>
+<div id="footer" class="footer-wrap">
+<footer id="colophon" class="site-footer container clearfix" role="contentinfo">
+<div id="footer-text" class="site-info">
+
+<p>Copyright © 2022 takeuforward | All rights reserved</p>
+</div>
+</footer>
+</div>
+</div>
+<script type="text/javascript" id="email-subscribers-js-extra">
+/* <![CDATA[ */
+var es_data = {"messages":{"es_empty_email_notice":"Please enter email address","es_rate_limit_notice":"You need to wait for sometime before subscribing again","es_single_optin_success_message":"Successfully Subscribed.","es_email_exists_notice":"Email Address already exists!","es_unexpected_error_notice":"Oops.. Unexpected error occurred.","es_invalid_email_notice":"Invalid email address","es_try_later_notice":"Please try after some time"},"es_ajax_url":"https:\/\/takeuforward.org\/wp-admin\/admin-ajax.php"};
+/* ]]> */
+</script>
+<script type="text/javascript" src="./MUST-DO Questions for [DBMS, CN, OS] Interviews_ SDE Core Sheet - Interviews - Tutorial_files/email-subscribers-v10f0b1d6c159fa0bc292db7470441b33420a5f01.js.download" id="email-subscribers-js"></script>
+<script type="text/javascript" id="maxwell-navigation-js-extra">
+/* <![CDATA[ */
+var maxwellScreenReaderText = {"expand":"Expand child menu","collapse":"Collapse child menu","icon":"<svg class=\"icon icon-expand\" aria-hidden=\"true\" role=\"img\"> <use xlink:href=\"https:\/\/takeuforward.org\/wp-content\/themes\/maxwell\/assets\/icons\/genericons-neue.svg#expand\"><\/use> <\/svg>"};
+/* ]]> */
+</script>
+<script type="text/javascript" src="./MUST-DO Questions for [DBMS, CN, OS] Interviews_ SDE Core Sheet - Interviews - Tutorial_files/navigation.min.js.download" id="maxwell-navigation-js"></script>
+<script type="text/javascript" src="./MUST-DO Questions for [DBMS, CN, OS] Interviews_ SDE Core Sheet - Interviews - Tutorial_files/comment-reply.min.js.download" id="comment-reply-js"></script>
+<script type="text/javascript" src="./MUST-DO Questions for [DBMS, CN, OS] Interviews_ SDE Core Sheet - Interviews - Tutorial_files/smush-lazy-load.min.js.download" id="smush-lazy-load-js"></script>
+<script type="text/javascript" src="./MUST-DO Questions for [DBMS, CN, OS] Interviews_ SDE Core Sheet - Interviews - Tutorial_files/wp-embed.min.js.download" id="wp-embed-js"></script>
+
+<script type="application/javascript" src="./MUST-DO Questions for [DBMS, CN, OS] Interviews_ SDE Core Sheet - Interviews - Tutorial_files/app.js.download" async=""></script>
+<script>var truepush=window.truepush||[];truepush.push(function(){truepush.Init({id:"61dbc600dbcca782e34d7a74"},function(error){if(error)console.error(error)})})</script>
+
+
+<script type="text/javascript">//<![CDATA[
+var adsenseLazyload=false;window.addEventListener("scroll",function(){(0!=document.documentElement.scrollTop&&false===adsenseLazyload||0!=document.body.scrollTop&&false===adsenseLazyload)&&(!function( ){var e=document.createElement("script");e.type="text/javascript",e.async=true,e.src="https://pagead2.googlesyndication.com/pagead/js/adsbygoogle.js?client=ca-pub-4354768384472857";var a=document.getElementsByTagName("script")[0];a.parentNode.insertBefore(e,a)}(),adsenseLazyload=true)},true);
+//]]></script>
+
+
+<div class="sticky-ads" id="sticky-ads">
+<div class="sticky-ads-close" onclick="document.getElementById(&quot;sticky-ads&quot;).style.display=&quot;none&quot;"><svg viewBox="0 0 512 512" xmlns="http://www.w3.org/2000/svg"><path d="M278.6 256l68.2-68.2c6.2-6.2 6.2-16.4 0-22.6-6.2-6.2-16.4-6.2-22.6 0L256 233.4l-68.2-68.2c-6.2-6.2-16.4-6.2-22.6 0-3.1 3.1-4.7 7.2-4.7 11.3 0 4.1 1.6 8.2 4.7 11.3l68.2 68.2-68.2 68.2c-3.1 3.1-4.7 7.2-4.7 11.3 0 4.1 1.6 8.2 4.7 11.3 6.2 6.2 16.4 6.2 22.6 0l68.2-68.2 68.2 68.2c6.2 6.2 16.4 6.2 22.6 0 6.2-6.2 6.2-16.4 0-22.6L278.6 256z"></path></svg></div>
+<div class="sticky-ads-content">
+<ins class="adsbygoogle" style="display:inline-block;height:80px;width:100%;line-height:70px;" data-ad-client="ca-pub-4354768384472857" data-ad-slot="3846287226"></ins>
+<script>(adsbygoogle=window.adsbygoogle||[]).push({})</script>
+<amp-auto-ads type="adsense" data-ad-client="ca-pub-4354768384472857">
+</amp-auto-ads>
+</div>
+</div>
+
+
+
+<div class="betternet-wrapper"></div><div>
+<div class="truepush_optin_notifications">
+
+</div>
+</div></body><grammarly-desktop-integration data-grammarly-shadow-root="true"></grammarly-desktop-integration></html>
