@@ -10,17 +10,14 @@ using namespace std;
 
 int main()
 {
-    // int_bse::sync_stdio(false);
-    // cin.tie(Null);
-    
-    int T;
-    cin >> T;
-    while (T--)
+    int arr[5] = {1, 2, 3, 4, 5};
+    vector<int> = {1, 2, 3, 4, 5};
+
+    v.push_back(6);
+
+    for (int i = 0; i < v.size(); i++)
     {
-        for (i, 20, 1)
-        {
-            cout << 2 << endl;
-        }
+        cout[i] << endl;
     }
     return 0;
 }
