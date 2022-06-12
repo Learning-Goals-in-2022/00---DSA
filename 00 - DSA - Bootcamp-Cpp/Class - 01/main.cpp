@@ -10,11 +10,15 @@ using namespace std;
 
 int main()
 {
+    int arr[10000000];
     return 0;
 }
 
 // Arrays:
 
-// local limit 10^5 create in Stack
+// local limit 10^5 create in Stack  and can be acces with in the funcion
 
-and Global Array limit is 10 ^ 7 create in Heap
+// Global Array limit is 10 ^ 7 create in Heap  , and can be access anywhre in the program
+
+
+// Past by value and Past by value
