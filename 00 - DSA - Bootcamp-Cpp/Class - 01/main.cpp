@@ -10,7 +10,18 @@ using namespace std;
 
 int main()
 {
-    int arr[10000000];
+    // int_bse::sync_stdio(false);
+    // cin.tie(Null);
+    
+    int T;
+    cin >> T;
+    while (T--)
+    {
+        for (i, 20, 1)
+        {
+            cout << 2 << endl;
+        }
+    }
     return 0;
 }
 
@@ -20,8 +31,4 @@ int main()
 
 // Global Array limit is 10 ^ 7 create in Heap  , and can be access anywhre in the program
 
-
 // Past by value and Past by value
-
-]]
-
