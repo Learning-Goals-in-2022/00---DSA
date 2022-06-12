@@ -2,7 +2,7 @@
 
 // Continer for Holding the Data
 // Itrator  Used in CP
-// Functors 
+// Functors
 
 #include <bits/stdc++.h>
 
@@ -10,5 +10,9 @@ using namespace std;
 
 int main()
 {
-    return 0; 
+    return 0;
 }
+
+// Arrays:
+
+// local and Global Array
