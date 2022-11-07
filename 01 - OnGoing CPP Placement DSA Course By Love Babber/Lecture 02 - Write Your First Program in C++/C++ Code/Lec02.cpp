@@ -5,7 +5,6 @@ int main()
     cout << "Hello World" << endl;
     int a = 123;
     cout << a << endl;
-    chare
 }
 
 // #include <iostream>

@@ -2,11 +2,16 @@
 using namespace std;
 int main()
 {
-    int a;
+    int a, b;
     cin >> a;
-    cout << "Your Output is " << a << endl;
-
-    return 0;
+    if (a >= 18)
+    {
+        cout << "  you are Eligibale" << endl;
+    }
+    else
+    {
+        cout << "You are Not Eligible " << endl;
+    }
 }
 
 // int a, b;
