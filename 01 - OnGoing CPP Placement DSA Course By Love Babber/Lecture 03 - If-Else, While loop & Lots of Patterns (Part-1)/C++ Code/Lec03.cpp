@@ -2,16 +2,40 @@
 using namespace std;
 int main()
 {
-    int a, b;
-    cin >> a;
-    if (a >= 18)
+    // int a, b;
+    // cin >> a;
+    // if (a >= 18)
+    // {
+    //     cout << "  you are Eligibale" << endl;
+    // }
+    // else
+    // {
+    //     cout << "You are Not Eligible " << endl;
+    // }
+
+    // while loop
+
+    // int n;
+    // cin >> n;
+    // int i = 1;
+    // while (i <= 10)
+    // {
+    //     cout << i << " ";
+    //     i = i + 1;
+    // }
+
+    // sum of two numbers
+
+    int n;
+    cin >> n;
+    int sum = 0;
+    int i = 1;
+    while (i <= n)
     {
-        cout << "  you are Eligibale" << endl;
+        sum = sum + i;
+        i = i + 1;
     }
-    else
-    {
-        cout << "You are Not Eligible " << endl;
-    }
+    cout << " The  the sum of " << n << " is = " << sum << endl;
 }
 
 // int a, b;
