@@ -2,29 +2,49 @@
 using namespace std;
 int main()
 {
-    // int a, b;
-    // cin >> a;
-    // if (a >= 18)
-    // {
-    //     cout << "  you are Eligibale" << endl;
-    // }
-    // else
-    // {
-    //     cout << "You are Not Eligible " << endl;
-    // }
-
-    // while loop
 
     // int n;
     // cin >> n;
-    // int i = 1;
-    // while (i <= 10)
+    // if (n <= 5)
     // {
-    //     cout << i << " ";
-    //     i = i + 1;
+
+    //     cout << "Hello World" << endl;
+    // }
+    // else
+    // {
+    //     cout << "Enter Corrrect Number" << endl;
     // }
 
-    // sum of two numbers
+    // 🤍 print positive -ve or zero no
+
+    // int a;
+    // cout << "Enter the value of a" << endl;
+    // cin >> a;
+    // if (a < 0)
+    // {
+    //     cout << "a is Negative" << endl;
+    // }
+    // else if (a > 0)
+    // {
+    //     cout << " a is Positive" << endl;
+    // }
+    // else
+    // {
+    //     cout << " a is Zero";
+    // }
+
+    // 🤍 while loop
+
+    // int n;
+    // cin >> n;
+    // int i = 0;
+    // while (i <= n)
+    // {
+    //     cout << i << " ";
+    //     i = i + 2;
+    // }
+
+    // 🤍 sum of  numbers
 
     int n;
     cin >> n;
@@ -33,58 +53,10 @@ int main()
     while (i <= n)
     {
         sum = sum + i;
-        i = i + 1;
+        i = i + 2;
     }
     cout << " The  the sum of " << n << " is = " << sum << endl;
 }
-
-// int a, b;
-// cin >> a >> b;
-// a = cin.get();
-
-// cout << "Value of a and b is " << a << b << endl;
-// cout << "the value of a is :" << a << endl;
-
-// more statements
-
-// int a;
-// cout << "Enter the vaue of A" << endl;
-// cin >> a;
-// if (a > 0)
-// {
-//     cout << "A is +Ve";
-// }
-// else
-// {
-//     if (a < 0)
-//     {
-//         cout << "A is -ve";
-//     }
-//     else
-//     {
-//         cout << "A is 0";
-//     }
-// }
-// cout << "the vaue of A is " << a << endl;
-
-// ELse if
-
-// int a;
-// cout << "Eenter the value of A" << endl;
-// cin >> a;
-
-// if (a > 0)
-// {
-//     cout << "A is +ve" << endl;
-// }
-// else if (a < 0)
-// {
-//     cout << "A is -ve" << endl;
-// }
-// else
-// {
-//     cout << "A is 0" << endl;
-// }
 
 // HomeWork By Ahsan
 
