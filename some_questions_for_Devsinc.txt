@@ -1,0 +1,81 @@
+Here Are Some Devsinc Interviews Questions U can get Idea From That:
+
+40 techical question 26 iq questions 24 EQ questions.
+Questions i was asked in Devsinc's interview:
+
+introduction:
+- how are you?
+- introduce yourself.
+
+then he made three columns on a page with titles: OOP, DS, DB, AP (analytical problem solving,) and asked me to rate myself out of 10.
+
+
+OOP:
+- four pillars of OOP?
+- difference between encapsulation and abstraction.
+- types of inheritance.
+- diamond problem.
+- solution of diamond problem.
+- polymorphism.
+- difference between method overloading and method overriding.
+- parameterized constructor.
+- can we call a class's function without an instance of it?
+- abstract class.
+- static class.
+- static methods.
+- class methods.
+- instance methods.
+
+DS:
+- difference between stack and queue.
+- state the better one.
+- types of data structures.
+- difference between array and linked list.
+- tradeoffs of array.
+- tradeoffs of linked list.
+- complexity of a binary tree.
+- sort negative numbers on one side of a linked list and the others on the other side with the time-complexity of o O(n).
+- find mode (most repeated number) from an unsorted linked list with the time complexity of O(n).
+
+DB:
+- what is a db?
+- he drew a table and encircled the titles of the columns and asked what it is? (attributes)
+- then he encircled an entire column and asked what is it? (a column)
+- primary key.
+- secondary key.
+- foreign key.
+- composite key.
+- where goes a primary key when there is a many-to-many relationship.
+- indexes.
+- transaction.
+- ACID properties.
+- mutex lock
+- write a query for employees who's name starts with A and have highest salary.
+- write a query for the third employee from the employees who's name starts with A and have highest salary.
+
+
+AP:
+- there are 9 snooker balls, each of the same size and the same weight except for the one, it's heavier than others. you have a sea-saw to weigh them. tell the minimum number of times you'd use the sea-saw to find the heavier one. also explain your logic.
+
+- there is square pool. each of its corners has a tree in it. you have to double the area of the pool without cutting the trees, getting them in the pool, and changing the place and the shape of the pool. (pool should always be a square)
+
+- there is a point A. there are 3k bananas and a camel that can carry 1k bananas at a time. there is a distance of 1k kilometers from point A to point B. the camel eats a banana after traveling a kilometer. design a way in which the maximum number of bananas can be delivered at point B.
+
+
+Further Some : 
+
+- Difference between Polymorphism and encapsulation
+- Difference between abstract class and interface
+- Difference between shallow copy and deep copy
+- Difference between assignment operator and copy constructor
+- Key difference between inheritance and associations with examples
+- Types of polymorphism
+- Find 3rd highest salary from employees table
+- Function jis mein 100 de to 101 aa jay. 101 aay to 100 aa jaay
+- Unsorted array mein se most repeating value aur usky index print kraany.
+
+ - Customer aur product ka many to many ka relationship hai. Phly schema bnana hai aur primary aur foreign keys btaani hain k kia bneingi
+Then query likhni hai k wo saary customers aa jain jinkin2 ya 2 se ziaada products hain
+
+
+Etc. These are the questions they asked me or some people. I provided that just so u people can get idea from That ky Devsinc kis type ky Questions zayda pochta hai mostly
